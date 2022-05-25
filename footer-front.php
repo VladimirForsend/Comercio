@@ -14,7 +14,7 @@
 
 
 
-<?php include get_template_directory() . '/titan/tiendas/tiendas.php'; ?>
+<?php include get_template_directory() . '/modulo-parallax-block/loop-parallax-block.php'; ?>
 
 
 
