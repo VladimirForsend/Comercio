@@ -1,0 +1,128 @@
+/*logo carrusel*/
+#carrusel_logos.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+
+
+
+#carrusel_logos .carrusel-interior {
+    outline: none;
+    height: 60px;
+    width: 25.3%;
+    background-repeat: no-repeat;
+    padding: 0px;
+    background-position: center center;
+    background-size: auto 100%;
+    border: 0px solid transparent;
+}
+  
+   #carrusel_logos .carousel-inner {
+    height: 165px;
+    margin-top: 15px;
+    width: 100%;
+}
+  #carrusel_logos .carousel-item {
+      height: 10rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+  #carrusel_logos .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content:flex-end;
+    width: 5%;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+    padding-right: 5px;
+
+}
+
+#carrusel_logos .carousel-control-prev-icon {
+  
+    width: 30px;
+    height: 90px;
+    border-top: 0px solid #000;
+ border:0px;
+    display:flex;
+    justify-content:center;
+     align-items: center;
+     background-color: #fff;
+background-image: none;
+position: absolute;
+}
+
+
+
+
+
+#carrusel_logos .carousel-control-next{
+   position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content:flex-start;
+      width: 5%;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+    padding-left: 5px;
+} 
+
+
+
+ #carrusel_logos .carousel-control-next-icon {
+    width: 30px;
+    height: 90px;
+    border-top: 1px solid #000;
+   border:0px;
+    display:flex;
+    justify-content:center;
+     align-items: center;
+     background-color: #fff;
+     background-image: none;
+     position: absolute;
+}
+ 
+#carrusel_logos .carousel-control-next-icon:after{
+    content:''; 
+    width: 15px;
+    height:15px;
+    border-top:5px solid #000;
+    border-right:5px solid #000;
+    display:block;
+    transform:rotate(45deg);
+    border-radius:1px;
+}
+
+#carrusel_logos .carousel-control-prev-icon:after{
+    content:'';
+    width: 15px;
+    height:15px;
+    border-bottom:5px solid #000;
+    border-left:5px solid #000;
+    display:block;
+    transform:rotate(45deg);
+    border-radius:1px;
+}
+
+
+
+
+/*logo carrusel*/

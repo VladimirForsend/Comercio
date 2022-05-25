@@ -1,0 +1,25 @@
+:root {
+    --titan-typo: 'Lato', sans-serif;
+    --titan-title-typo: 'Lato', sans-serif;
+    --color-azul: #3483fa;
+    --color-contraste-blanco: #fff;
+    --color-contraste-negro: #000;
+    --color-carbon: #1e1e1e;
+    --color-cliente: #fe2b4e; /* color de la marca */
+    --color-disponible: #28A745;
+    --color-verde-base: #8fca00;
+    --color-texto: #767676;
+    --color-agotado: #666;
+    --color-secundario-cliente: #1e1e1e;
+    --color-terciario-cliente: #000;
+    --color-gris: #666;
+    --h1: 2.5rem;
+    --h2: 2rem;
+    --h3: 1.5rem;
+    --parrafos: 1rem;
+    --peso-mosca: 100;
+    --peso-mediano: 300;
+    --peso-pesado: 700;
+    --margen-inferior-titulos: 0 0 22px 0px;
+    --transparente: transparent;
+}
