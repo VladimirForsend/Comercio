@@ -20,36 +20,7 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
 
     <?php wp_head(); ?>
-	<!-- Hotjar Tracking Code for https://crazyoutlets.cl/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2549496,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-<!-- Facebook Pixel Code -->
-<script>
-	!function(f,b,e,v,n,t,s)
-	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-	n.queue=[];t=b.createElement(e);t.async=!0;
-	t.src=v;s=b.getElementsByTagName(e)[0];
-	s.parentNode.insertBefore(t,s)}(window,document,'script',
-	'https://connect.facebook.net/en_US/fbevents.js');
-	 fbq('init', '908184890110108'); 
-	fbq('track', 'PageView');
-</script>
-<noscript>
-	 <img height="1" width="1" 
-	src="https://www.facebook.com/tr?id=908184890110108&ev=PageView
-	&noscript=1"/>
-</noscript>
-<!-- End Facebook Pixel Code -->
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -114,17 +85,17 @@
                 </div>
             </nav><!-- #site-navigation -->
 
-            <?php include get_template_directory() . '/titan/templates-forsend/navs/nav-mobile.php'; ?>
+            <?php include get_template_directory() . '/assets/templates/navs/nav-mobile.php'; ?>
         </header><!-- #masthead -->
         <?php /* include get_template_directory() . '/preloader.php'; */ ?>
 	</div>
 	
 	<div class="container-fluid">
 		<div class="row">
-			<?php require get_template_directory() . '/titan/slider/slider.php'; ?>
+			<?php require get_template_directory() . '/assets/modulo-slider/slider.php'; ?>
 		</div>
 		<div class="row my-3">
-			<?php include get_template_directory() . '/titan/infobox/infobox.php'; ?>
+			<?php include get_template_directory() . '/assets/modulo-infobox/loop-infobox.php'; ?>
 		</div>
 	</div>
     
