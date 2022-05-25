@@ -92,10 +92,10 @@
 	
 	<div class="container-fluid">
 		<div class="row">
-			<?php require get_template_directory() . '/assets/modulo-slider/slider.php'; ?>
+			<?php require get_template_directory() . '/assets/modulos/modulo-slider/slider.php'; ?>
 		</div>
 		<div class="row my-3">
-			<?php include get_template_directory() . '/assets/modulo-infobox/loop-infobox.php'; ?>
+			<?php include get_template_directory() . '/assets/modulos/modulo-infobox/loop-infobox.php'; ?>
 		</div>
 	</div>
     
