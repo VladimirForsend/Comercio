@@ -26,8 +26,8 @@
 									<img class="accesibility-img d-none" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="<?php echo get_the_title(); ?>">
 								</figure>
 								<div class="texto_interior_campos_home">
-									<div class="infobox-box infobox-<?php the_ID(); ?>"><?php echo get_the_title(); ?></div>
-									<div class="infobox-box infobox-<?php the_ID(); ?>"><?php echo get_the_excerpt(); ?></div>
+									<div class="color_texto_iconos infobox-box infobox-<?php the_ID(); ?>"><p><?php echo get_the_title(); ?></p></div>
+									<div class="color_texto_iconos infobox-box infobox-<?php the_ID(); ?>"><p><?php echo get_the_excerpt(); ?></p></div>
 								</div>
 							</div>
 						</a>
