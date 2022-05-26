@@ -28,7 +28,7 @@ function color_icono_titan()
 {
     ?>
          <style type="text/css">
-             body{color:<?php echo get_theme_mod('color_iconos', '#161616'); ?>; }
+             .color_icono{color:<?php echo get_theme_mod('color_iconos', '#161616'); ?>; }
             
          </style>
     <?php
