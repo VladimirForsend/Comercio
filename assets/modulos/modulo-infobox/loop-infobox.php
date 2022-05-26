@@ -21,7 +21,7 @@
 					<div id="infobox-<?php the_ID(); ?>" class="col-12 col-sm-6 col-lg-3 infobox-<?php the_ID(); ?> infobox-iconos">
 						<a class="d-inline-block w-100" href="<?php the_permalink(); ?>">
 							<div class="contendor-iconos">
-								<figure class="infobox-icono infobox-<?php the_ID(); ?>">
+								<figure class="color_iconos infobox-icono infobox-<?php the_ID(); ?>">
 								<?php the_field('infobox_icono');?>
 									<img class="accesibility-img d-none" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="<?php echo get_the_title(); ?>">
 								</figure>
