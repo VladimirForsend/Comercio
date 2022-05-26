@@ -63,7 +63,7 @@ function color_texto_comercio_titan()
 {
     ?>
          <style type="text/css">
-             .color_texto_comercios{color:<?php echo get_theme_mod('color_texto_comercios', '#161616'); ?>; }
+             body p{color:<?php echo get_theme_mod('color_texto_comercios', '#161616'); ?>; }
             
          </style>
     <?php
