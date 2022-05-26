@@ -34,36 +34,36 @@ function color_icono_titan()
     <?php
 }
 
-add_action( 'customize_register', 'color_texto_icono' );
-function color_texto_icono( $wp_customize ) {
+add_action( 'customize_register', 'color_texto_comercio' );
+function color_texto_comercio( $wp_customize ) {
 
 
     //seccion customizer
-    $wp_customize->add_section( 'color_texto_icono' , array(
-        'title'      => 'Color texto íconos',
+    $wp_customize->add_section( 'color_texto_comercio' , array(
+        'title'      => 'Color textos sitio',
         'priority'   => 30,
     ) );
     //seccion customizer
 
-    $wp_customize->add_setting( 'color_texto_iconos' , array(
+    $wp_customize->add_setting( 'color_texto_comercios' , array(
         'default'     => '#43C6E4',
         'transport'   => 'refresh',
     ) );
 
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'color_texto_iconos', array(
-        'label'        => 'Color íconos',
-        'section'    => 'color_texto_icono',
-        'settings'   => 'color_texto_iconos',
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'color_texto_comercios', array(
+        'label'        => 'Color de textos',
+        'section'    => 'color_texto_comercio',
+        'settings'   => 'color_texto_comercios',
     ) ) );
 
 } 
 
-add_action( 'wp_head', 'color_texto_icono_titan');
-function color_texto_icono_titan()
+add_action( 'wp_head', 'color_texto_comercio_titan');
+function color_texto_comercio_titan()
 {
     ?>
          <style type="text/css">
-             .color_texto_iconos{color:<?php echo get_theme_mod('color_texto_iconos', '#161616'); ?>; }
+             .color_texto_comercios{color:<?php echo get_theme_mod('color_texto_comercios', '#161616'); ?>; }
             
          </style>
     <?php
