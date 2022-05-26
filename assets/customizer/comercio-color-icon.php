@@ -69,5 +69,37 @@ function color_texto_comercio_titan()
     <?php
 }
 
+add_action( 'customize_register', 'color_titulosh1_comercio' );
+function color_titulosh1_comercio( $wp_customize ) {
 
 
+    //seccion customizer
+    $wp_customize->add_section( 'color_titulosh1_comercio' , array(
+        'title'      => 'Color titulos H1 sitio',
+        'priority'   => 30,
+    ) );
+    //seccion customizer
+
+    $wp_customize->add_setting( 'color_titulosh1_comercios' , array(
+        'default'     => '#43C6E4',
+        'transport'   => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'color_titulosh1_comercios', array(
+        'label'        => 'Color de encabezados principales',
+        'section'    => 'color_titulosh1_comercio',
+        'settings'   => 'color_titulosh1_comercios',
+    ) ) );
+
+} 
+
+add_action( 'wp_head', 'color_titulosh1_comercio_titan');
+function color_titulosh1_comercio_titan()
+{
+    ?>
+         <style type="text/css">
+            body h1{color:<?php echo get_theme_mod('color_titulosh1_comercios', '#161616', '!important'); ?>; }
+            
+         </style>
+    <?php
+}
