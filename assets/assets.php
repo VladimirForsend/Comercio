@@ -4,7 +4,7 @@
  * funcion slider.  
  */
 
-include get_template_directory() . '/assets/customizer/comercio-color-icon customizer.php';
+include get_template_directory() . '/assets/customizer/comercio-color-icon.php';
 include get_template_directory() . '/assets/woocommerce/funciones_woocommerce.php';
 
 /*assets styles*/
