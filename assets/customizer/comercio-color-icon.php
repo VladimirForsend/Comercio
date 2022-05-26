@@ -34,51 +34,37 @@ function color_icono_titan()
     <?php
 }
 
-add_action('customize_register', 'color_titulos_comercio');
-
-function color_titulos_comercio($wp_customize)
-{
+add_action( 'customize_register', 'color_titulo_h1_comercio' );
+function color_titulo_h1_comercio( $wp_customize ) {
 
 
     //seccion customizer
-    $wp_customize->add_section(
-        'color_titulos_comercio',
-        array(
-            'title'      => 'Color titulos',
-            'priority'   => 30,
-        )
-    );
+    $wp_customize->add_section( 'color_titulo_h1_comercio' , array(
+        'title'      => 'Color íconos',
+        'priority'   => 30,
+    ) );
     //seccion customizer
 
-    $wp_customize->add_setting(
-        'color_titulos_comercios',
-        array(
-            'default'     => '#43C6E4',
-            'transport'   => 'refresh',
-        )
-    );
+    $wp_customize->add_setting( 'color_titulo_h1_comercios' , array(
+        'default'     => '#43C6E4',
+        'transport'   => 'refresh',
+    ) );
 
-    $wp_customize->add_control(
-        new WP_Customize_Color_Control(
-            $wp_customize,
-            'color_titulos_comercios',
-            array(
-                'label'        => 'Color de encabezados h1',
-                'section'    => 'color_titulos_comercio',
-                'settings'   => 'color_titulos_comercios',
-            )
-        )
-    );
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'color_titulo_h1_comercios', array(
+        'label'        => 'Color íconos',
+        'section'    => 'color_titulo_h1_comercio',
+        'settings'   => 'color_titulo_h1_comercios',
+    ) ) );
+
 } 
- 
 
-add_action( 'wp_head', 'color_titulosh1_comercio_titan');
-function color_titulosh1_comercio_titan()
+add_action( 'wp_head', 'color_titulo_h1_comercio_titan');
+function color_titulo_h1_comercio_titan()
 {
     ?>
          <style type="text/css">
-            body h1{color:<?php echo get_theme_mod('color_titulosh1_comercios', '#161616', '!important'); ?>; }
+             body h1{color:<?php echo get_theme_mod('color_titulo_h1_comercios', '#656563', '!important'); ?>; }
             
-         </style>
+         </style> 
     <?php
 }
