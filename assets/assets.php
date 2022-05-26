@@ -194,6 +194,6 @@ include get_template_directory() . '/assets/modulos/modulo-microbox/core-microbo
 include get_template_directory() . '/assets/woocommerce/campos-woocommerce.php';
 include get_template_directory() . '/assets/modulos/modulo-parallax-block/core-parallax-block.php';
 include get_template_directory() . '/assets/modulos/modulo-carrusel-logos/core-carrusel-logo.php';
-
+include get_template_directory() . '/assets/modulos/modulo-infobox/core-infobox.php';
 //widget wsapp
 include get_template_directory() . '/assets/widgets/widget-whatsapp.php';
