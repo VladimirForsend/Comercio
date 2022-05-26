@@ -22,8 +22,8 @@
 						<a class="d-inline-block w-100" href="<?php the_permalink(); ?>">
 							<div class="contendor-iconos">
 								<figure class="infobox-<?php the_ID(); ?>">
-								<?php the_field();?>
-									<img class="accesibility-img d-none" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="<?php echo get_the_excerpt(); ?>">
+								<?php the_field('infobox_icono');?>
+									<img class="accesibility-img d-none" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="<?php echo get_the_title(); ?>">
 								</figure>
 								<div class="texto_interior_campos_home">
 									<div class="infobox-box infobox-<?php the_ID(); ?>"><?php echo get_the_title(); ?></div>
