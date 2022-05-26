@@ -1,5 +1,5 @@
 <style>
-	<?php include get_template_directory() . '/titan/infobox/infobox.css'; ?>
+	<?php include get_template_directory() . '/assets/modulos/modulo-infobox/infobox.css'; ?>
 </style>
 <div id="comercio-infobox" class="container-fluid">
 	<div class="container">
