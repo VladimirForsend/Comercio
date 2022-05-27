@@ -40,18 +40,20 @@ function color_titulo_h1_comercio( $wp_customize ) {
 
     //seccion customizer
     $wp_customize->add_section( 'color_titulo_h1_comercio' , array(
-        'title'      => 'Color íconos',
+        'title'      => 'Color titulos',
         'priority'   => 30,
     ) );
     //seccion customizer
 
+    
+    
     $wp_customize->add_setting( 'color_titulo_h1_comercios' , array(
         'default'     => '#43C6E4',
         'transport'   => 'refresh',
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'color_titulo_h1_comercios', array(
-        'label'        => 'Color íconos',
+        'label'        => 'Color Encabezado principal',
         'section'    => 'color_titulo_h1_comercio',
         'settings'   => 'color_titulo_h1_comercios',
     ) ) );
