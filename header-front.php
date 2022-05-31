@@ -65,6 +65,18 @@
                     </a>
                 </div>
 
+
+                <?php //OPCIÓN MENU 1 SIMPLE CON BOOTSTRAP
+							wp_nav_menu(
+								array(
+									'theme_location' => 'menu-superior',
+									'menu_id'        => 'primary-menu',
+									'menu_class'	 => 'navbar-nav color-dark',
+									'container_class' => 'col-12 col-lg-7',
+								)
+							);
+							?>
+
                 <div class="collapse navbar-collapse contenedor-carsesbus" id="navbarSupportedContent">
                     <ul id="navbar" class="barra-busqueda">
                         <div class="busqueda nav-item col-md-12">
