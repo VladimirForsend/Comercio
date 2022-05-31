@@ -36,16 +36,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-<?php //OPCIÓN MENU 1 SIMPLE CON BOOTSTRAP
+        <?php //OPCIÓN MENU 1 SIMPLE CON BOOTSTRAP
                 wp_nav_menu(
                     array(
-                        'theme_location' => 'menu-mobile',
+                        'theme_location' => 'menu-superior',
                         'menu_id'        => 'primary-menu',
                         'menu_class'     => 'navbar-nav me-auto mb-2 mb-lg-0',
                         'container_class' => 'col-12 col-lg-7',
                     )
                 );
                 ?>
+
 
             <div class="d-flex">
 
