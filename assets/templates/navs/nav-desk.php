@@ -38,7 +38,7 @@
                         'theme_location' => 'menu-superior',
                         'menu_id'        => 'navbar',
                         'menu_class'     => 'navbar-nav me-auto mb-2 mb-lg-0',
-                        'container_class' => 'col-12 col-lg-7',
+                        'container_class' => false,
                     )
                 );
                 ?>
