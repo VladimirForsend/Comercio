@@ -71,6 +71,9 @@
                             <?php if (function_exists('aws_get_search_form')) { aws_get_search_form(); } ?>
                         </div>
                     </ul>
+                    <div class="nav-tablet">
+                        hola
+                    </div>
 
                     <div class="d-flex justify-content-center align-items-center menu-cuenta-compras">
                         <?php
