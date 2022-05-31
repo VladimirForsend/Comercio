@@ -54,16 +54,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="contenedor-categorias-boton">
-                    <a class="d-flex align-items-center" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content='<?php wp_nav_menu(array( 'theme_location' => 'menu-superior', 'menu_id' => 'navbar','menu_class' => 'navbar-nav pop-menu', ));?>'>
-                        <button class="boton-menu-desk" type="button">
-                            <span class="linea-hamburguesa"></span>
-                            <span class="linea-hamburguesa"></span>
-                            <span class="linea-hamburguesa"></span>
-                        </button>
-                        <span class="boton-texto">Categorías</span>
-                    </a>
-                </div>
+        
 
 
                 <?php //OPCIÓN MENU 1 SIMPLE CON BOOTSTRAP
