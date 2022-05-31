@@ -26,13 +26,7 @@
                 <div class="login-mobile"><a href="<?php echo get_home_url(); ?>/my-account"><i class="fas fa-user"></i></a></div>
                 <div class="d-flex justify-content-center align-items-center mini-carrito"></div>
             </div>
-            <div class="col-12">
-                <div class="busqueda nav-item">
-                    <?php if (function_exists('aws_get_search_form')) {
-                        aws_get_search_form();
-                    } ?>
-                </div>
-            </div>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
