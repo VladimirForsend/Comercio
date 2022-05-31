@@ -30,7 +30,7 @@
         <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'ecommerce-para-chile'); ?></a>
 
         <header id="masthead" class="site-header">
-        <div class="d-none d-md-block">
+        <div class="d-none d-md-block d-lg-block d-xl-block">
         <?php include get_template_directory() . '/assets/templates/navs/nav-desk.php'; ?>    
         </div>
         <div class="d-block d-md-none d-lg-none d-xl-none">
