@@ -33,6 +33,18 @@
                                     $wp_custom_sale = get_post_meta(get_the_ID(), '_sale_price', true);
                                     ?>
                             </div>
+
+                            <div class="tarjeta-producto-superior w-100">
+                             
+                                    <?php woocommerce_template_loop_product_thumbnail(); ?>
+                                    <h2><?php echo get_the_title(); ?></h2>
+                                    <?php
+                                    global $woocommerce;
+                                    $wp_currency = get_woocommerce_currency_symbol();
+                                    $sp_custom_price = get_post_meta(get_the_ID(), '_regular_price', true);
+                                    $wp_custom_sale = get_post_meta(get_the_ID(), '_sale_price', true);
+                                    ?>
+                            </div>
                             <div class="tarjeta-producto-inferior w-100">
                                 <?php if ($wp_custom_sale) : ?>
                                     <p class="price">
