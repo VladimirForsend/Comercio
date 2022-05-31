@@ -70,7 +70,7 @@
                         <div class="busqueda nav-item col-md-12">
                             <?php if (function_exists('aws_get_search_form')) { aws_get_search_form(); } ?>
                         </div>
-                    </ul> holaaaaaaa
+                    </ul>
 
                     <div class="d-flex justify-content-center align-items-center menu-cuenta-compras">
                         <?php
