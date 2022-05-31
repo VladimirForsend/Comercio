@@ -21,7 +21,7 @@ jQuery(function($) {
             settings: {
                 slidesToShow: 3
             }
-        },{
+        }, {
             breakpoint: 768,
             settings: {
                 slidesToShow: 2
@@ -33,7 +33,7 @@ jQuery(function($) {
             }
         }]
     });
-	
+
 
     $(".menu-item-has-children").addClass("nav-item dropdown");
     $(".menu-item-has-children a").addClass("nav-link dropdown-toggle");
@@ -47,10 +47,16 @@ jQuery(function($) {
     $("li.nav-item a").addClass('nav-link');
     $(".navbar .menu-item a").addClass('nav-link');
 
-    $(function() {
-        $('[data-toggle="popover"]').popover({ html: true })
-
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
     })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
 
 
     $(function() {
@@ -90,42 +96,42 @@ jQuery(function($) {
     var tabla_dime = $(".woocommerce-product-attributes-item.woocommerce-product-attributes-item--dimensions");
     $(tabla_dime).appendTo(".has-subtle-light-gray-background-color.has-background");
 
-	/* para ocultar los hijos en el menu mobile (opcional) */
-    if($('#navbarmobile').hasClass('remove-children')){
+    /* para ocultar los hijos en el menu mobile (opcional) */
+    if ($('#navbarmobile').hasClass('remove-children')) {
         $('#navbarmobile .dropdown-menu').addClass('d-none').removeClass('dropdown-menu');
     };
 
     /* para cerrar el popover de categorias al hacer click en cualquier parte */
-    $('body').on('click', function (e) {
+    $('body').on('click', function(e) {
         /*did not click a popover toggle, or icon in popover toggle, or popover*/
-        if ($(e.target).data('toggle') !== 'popover'
-            && $(e.target).parents('[data-toggle="popover"]').length === 0
-            && $(e.target).parents('.popover.in').length === 0) { 
+        if ($(e.target).data('toggle') !== 'popover' &&
+            $(e.target).parents('[data-toggle="popover"]').length === 0 &&
+            $(e.target).parents('.popover.in').length === 0) {
             $('[data-toggle="popover"]').popover('hide');
         }
     });
-	
-	/* para desplegar el menu hijo en links padre del menu categorias 
-	$('.pop-menu .menu-item-has-children').mouseover */
+
+    /* para desplegar el menu hijo en links padre del menu categorias 
+    $('.pop-menu .menu-item-has-children').mouseover */
 
     /* para eliminar todas las imagenes en la parte de descripción del producto (opcional) 
     $('.comercio--description-inner').find('img').addClass('d-none');
     */
     /* para ocultar la seccion de descripción si esta vacia */
-    if(!$('.description-inner-content').children().length > 0){
+    if (!$('.description-inner-content').children().length > 0) {
         $('.comercio--description-inner').hide();
     };
-	
-	/* para ocultar la seccion de informacion adicional en caso que este vacia y agrandar descripcion */
-    if(!$('.additional-information-content').children().length > 0){
+
+    /* para ocultar la seccion de informacion adicional en caso que este vacia y agrandar descripcion */
+    if (!$('.additional-information-content').children().length > 0) {
         $('.comercio--additional-information').hide();
         $('.comercio--description-inner').removeClass('col-lg-6');
     };
 
     /* mover productos relacionados al final y quitar los margenes del footer en caso que exista */
     $('.upsells').addClass('container pt-4').appendTo($('.woocommerce-extra-section'));
-    if($('.upsells').length > 0){
-        $('#colophon').css({'margin-top':'0'});
+    if ($('.upsells').length > 0) {
+        $('#colophon').css({ 'margin-top': '0' });
     };
 
     /* limitar productos relacionados a 4 */
@@ -140,5 +146,5 @@ jQuery(function($) {
         };
     });
     */
-      
+
 });
