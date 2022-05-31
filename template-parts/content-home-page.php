@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 	        <!-- slider de productos destacados -->
-			<?php include get_template_directory() . '/titan/productos/producto-destacados-post-type.php'; ?>
+			<?php include get_template_directory() . '/assets/modulo-productos/producto-destacados-post-type.php'; ?>
         <!-- fin de slider de productos destacados -->
-		
+
 </article><!-- #post-<?php the_ID(); ?> -->
