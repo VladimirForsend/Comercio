@@ -11,7 +11,7 @@
         $ordering['orderby']     = array_shift(explode(' ', $ordering['orderby']));
         $ordering['orderby']     = stristr($ordering['orderby'], 'price') ? 'meta_value_num' : $ordering['orderby'];
         $products_per_page       = apply_filters('loop_shop_per_page', wc_get_default_products_per_row() * wc_get_default_product_rows_per_page());
-        $products_per_page = 40; // -1 shows all posts
+        $products_per_page = -1; // -1 shows all posts
         $products_ids            = wc_get_products(array(
             'status'               => 'publish',
             'limit'                => $products_per_page,
