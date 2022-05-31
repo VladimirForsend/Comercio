@@ -21,39 +21,77 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'comercio2' ); ?></a>
+ 
+    <?php wp_body_open(); ?>
+    <div id="page" class="site sticky-top nav-shadow">
+        <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'ecommerce-para-chile'); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$comercio2_description = get_bloginfo( 'description', 'display' );
-			if ( $comercio2_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $comercio2_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+        <header id="masthead" class="site-header">
+            <nav id="site-navigation" class="navbar navbar-expand-md navbar-light d-none d-md-flex justify-content-center py-0">
+                <div class="navbar-brand">
+                    <?php
+                    the_custom_logo();
+                    if (is_front_page() && is_home()) :
+                    ?>
+                        <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+                    <?php
+                    else :
+                    ?>
+                        <p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
+                    <?php
+                    endif;
+                    $fundaciones_description = get_bloginfo('description', 'display');
+                    if ($fundaciones_description || is_customize_preview()) :
+                    ?>
+                        <p class="site-description"><?php echo $fundaciones_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+                                                    ?></p>
+                    <?php endif; ?>
+                </div><!-- .navbar-brand -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'comercio2' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+                <div class="contenedor-categorias-boton">
+                    <a class="d-flex align-items-center" data-container="body" data-toggle="popover" data-placement="bottom" data-content='<?php wp_nav_menu(array( 'theme_location' => 'menu-superior', 'menu_id' => 'navbar','menu_class' => 'navbar-nav pop-menu', ));?>'>
+                        <button class="boton-menu-desk" type="button">
+                            <span class="linea-hamburguesa"></span>
+                            <span class="linea-hamburguesa"></span>
+                            <span class="linea-hamburguesa"></span>
+                        </button>
+                        <span class="boton-texto">Categorías</span>
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse contenedor-carsesbus" id="navbarSupportedContent">
+                    <ul id="navbar" class="barra-busqueda">
+                        <div class="busqueda nav-item col-md-12">
+                            <?php if (function_exists('aws_get_search_form')) { aws_get_search_form(); } ?>
+                        </div>
+                    </ul>
+
+                    <div class="d-flex justify-content-center align-items-center menu-cuenta-compras">
+                        <?php
+                        wp_nav_menu(array(
+                            'theme_location' => 'menu-rrss',
+                            'menu_id'        => 'navbar',
+                            'menu_class' => 'componentes-menu-cuenta',
+                        )); ?>
+                    </div>
+
+                    <div class="mini-carrito"></div>
+                </div>
+            </nav><!-- #site-navigation -->
+
+            <?php include get_template_directory() . '/assets/templates/navs/nav-mobile.php'; ?>
+        </header><!-- #masthead -->
+        <?php /* include get_template_directory() . '/preloader.php'; */ ?>
+	</div>
+	
+	<div class="container-fluid">
+		<div class="row">
+			<?php require get_template_directory() . '/assets/modulos/modulo-slider/slider.php'; ?>
+		</div>
+		<div class="row my-3">
+			<?php include get_template_directory() . '/assets/modulos/modulo-infobox/loop-infobox.php'; ?>
+		</div>
+	</div>
