@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <!---row-->
         <div class="row">
-            <!---navbrand--><a class="navbar-brand" href="#">
+            <!---navbrand--><a class="navbar-brand col-12 col-md-2" href="#">
                 <?php
                 the_custom_logo();
                 if (is_front_page() && is_home()) :
@@ -22,7 +22,7 @@
                                                 ?></p>
                 <?php endif; ?>
             </a>
-            <div class="col-12 d-flex align-items-center justify-content-end">
+            <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
                 <div class="login-mobile"><a href="<?php echo get_home_url(); ?>/my-account"><i class="fas fa-user"></i></a></div>
                 <div class="d-flex justify-content-center align-items-center mini-carrito"></div>
             </div>
@@ -36,7 +36,7 @@
                 wp_nav_menu(
                     array(
                         'theme_location' => 'menu-superior',
-                        'menu_id'        => 'primary-menu',
+                        'menu_id'        => 'navbar',
                         'menu_class'     => 'navbar-nav me-auto mb-2 mb-lg-0',
                         'container_class' => 'col-12 col-lg-7',
                     )
