@@ -1,7 +1,7 @@
 <nav id="site-navigation" class="navbar navbar-expand-lg navbar-light py-0 d-flex d-md-none nav-mobile">
     <div class="container">
         <div class="row justify-content-between align-items-center">
-            <div class="navbar-brand col-6 mr-0">
+            <div class="navbar-brand col-12 mr-0">
                 <?php
                 the_custom_logo();
                 if (is_front_page() && is_home()) :
@@ -19,9 +19,9 @@
                     <p class="site-description"><?php echo $fundaciones_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
                                                 ?></p>
                 <?php endif; ?>
-                <button class="navbar-toggler boton-mobile" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
             </div><!-- .navbar-brand -->
                 
             <div class="col-5 d-flex align-items-center justify-content-end">
