@@ -77,9 +77,6 @@ jQuery(function($) {
     var carro_productos = $(".xoo-wsc-basket");
     $(carro_productos).prependTo(".mini-carrito");
 
-    var buscar_productos = $(".aws-search-btn.aws-form-btn");
-    $(buscar_productos).prependTo(".aws-wrapper");
-
     var titulo_productos = $(".home .page header.entry-header");
     $(titulo_productos).prependTo(".home .woocommerce.columns-4");
 
