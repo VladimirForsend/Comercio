@@ -43,10 +43,7 @@
                 );
                 ?>
 
-
-                <div class="d-flex">
-                <?php if ( function_exists( 'aws_get_search_form' ) ) { aws_get_search_form( true, array( 'id' => '62968e5c35f00' ) ); } ?>
-                </div>
+<?php if ( function_exists( 'aws_get_search_form' ) ) { aws_get_search_form( true, array( 'id' => '62968e5c35f00' ) ); } ?>
             </div>
         </div>
     </div>
