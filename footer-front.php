@@ -13,7 +13,7 @@
 ?>
 
 
-
+chao
 <?php include get_template_directory() . '/modulo-parallax-block/loop-parallax-block.php'; ?>
 
 
