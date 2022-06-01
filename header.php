@@ -86,12 +86,3 @@
         </header><!-- #masthead -->
         <?php /* include get_template_directory() . '/preloader.php'; */ ?>
 	</div>
-	
-	<div class="container-fluid">
-		<div class="row">
-			<?php require get_template_directory() . '/assets/modulos/modulo-slider/slider.php'; ?>
-		</div>
-		<div class="row my-3">
-			<?php include get_template_directory() . '/assets/modulos/modulo-infobox/loop-infobox.php'; ?>
-		</div>
-	</div>
