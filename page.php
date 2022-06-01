@@ -16,7 +16,7 @@ get_header();
 ?>
 <?php
     // TOP PICTURE DEFINITIONS
-	if ( is_page('tienda') ) { ?>
+	if ( is_page('productos') ) { ?>
        hola soy el shop
 	<?php }
     else { ?>
