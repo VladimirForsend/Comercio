@@ -25,7 +25,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse col-12 col-md-10" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse col-12 col-md-9" id="navbarSupportedContent">
 
                 <?php //OPCIÓN MENU 1 SIMPLE CON BOOTSTRAP
                 wp_nav_menu(
