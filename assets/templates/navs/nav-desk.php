@@ -2,7 +2,7 @@
     <!---conatiner-->
     <div class="container-fluid">
         <!---row-->
-        <div class="row">
+        <div class="row w-100">
             <!---navbrand--><a class="navbar-brand col-12 col-md-2" href="#">
                 <?php
                 the_custom_logo();
