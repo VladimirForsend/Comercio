@@ -86,6 +86,10 @@ jQuery(function($) {
     var titulo_checkout = $("#order_review_heading");
     $(titulo_checkout).prependTo("#order_review");
 
+    var clasesBuscador = $('.aws-container');
+    var idBuscador = $('.aws-container');
+    $(idBuscador).attr('id', 'buscador-comercio');
+    $(clasesBuscador).addClass('buscador-comercio col-12 col-md-3');
 
     var tabla_peso = $(".woocommerce-product-attributes-item.woocommerce-product-attributes-item--weight");
     $(tabla_peso).appendTo(".has-subtle-light-gray-background-color.has-background");
