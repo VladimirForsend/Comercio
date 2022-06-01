@@ -16,7 +16,7 @@ get_header();
 ?>
 <?php
     // TOP PICTURE DEFINITIONS
-    if ( is_shop('english') ) { ?>
+    if ( is_shop() ) { ?>
        hola soy el shop
 	<?php }
     else { ?>
