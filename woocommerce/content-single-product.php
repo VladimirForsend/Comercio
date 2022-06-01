@@ -73,7 +73,7 @@ if (post_password_required()) {
                     $caracteristica5 = get_field('caracteristicas_destacadas_cinco');
                     if(empty($caracteristica1) && empty($caracteristica2) && empty($caracteristica3) && empty($caracteristica4) && empty($caracteristica5)) { } else {
                     ?>
-                    <h6 class="h6 mt-4 pesado">Caracteristicas destacada</h6>
+                    <h6 class="h6 mt-4 pesado"><?php the_field('titulo-caracteristicas-destacadas');?></h6>
                     <ul class="row flex-column caracteristicas-destacadas">
                         <?php if(!empty($caracteristica1)){ ?>
                             <li><?php the_field('caracteristicas_destacadas_uno'); ?></li>
