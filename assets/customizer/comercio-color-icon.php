@@ -36,7 +36,7 @@ function color_icono_titan()
         }
 
         .color_texto_iconos p {
-            color: <?php echo get_theme_mod('color_iconos', '#161616'); ?>;
+            color: <?php echo get_theme_mod('color_iconos', '#000000'); ?>;
         }
     </style>
 <?php
