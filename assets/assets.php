@@ -11,6 +11,9 @@ include get_template_directory() . '/assets/woocommerce/funciones_woocommerce.ph
 add_post_type_support('page', 'excerpt');
 
 
+// Disables the block editor from managing widgets.
+add_filter( 'use_widgets_block_editor', '__return_false' );
+
 function comercio_framework()
 {
     wp_register_style('iconos', get_template_directory_uri() . '/assets/librerias/css/fafa/css/all.css', 'all');
@@ -202,3 +205,5 @@ include get_template_directory() . '/assets/modulos/modulo-carrusel-logos/core-c
 include get_template_directory() . '/assets/modulos/modulo-infobox/core-infobox.php';
 //widget wsapp
 include get_template_directory() . '/assets/widgets/widget-whatsapp.php';
+
+
