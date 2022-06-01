@@ -22,15 +22,10 @@
                                                 ?></p>
                 <?php endif; ?>
             </a>
-            <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
-                <div class="login-mobile"><a href="<?php echo get_home_url(); ?>/my-account"><i class="fas fa-user"></i></a></div>
-                <div class="d-flex justify-content-center align-items-center mini-carrito"></div>
-            </div>
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse col-12" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse col-12 col-md-10" id="navbarSupportedContent">
 
                 <?php //OPCIÓN MENU 1 SIMPLE CON BOOTSTRAP
                 wp_nav_menu(
@@ -43,7 +38,9 @@
                 );
                 ?>
 
-<?php if ( function_exists( 'aws_get_search_form' ) ) { aws_get_search_form( true, array( 'id' => '62968e5c35f00' ) ); } ?>
+                <?php if (function_exists('aws_get_search_form')) {
+                    aws_get_search_form(true, array('id' => '62968e5c35f00'));
+                } ?>
             </div>
         </div>
     </div>
