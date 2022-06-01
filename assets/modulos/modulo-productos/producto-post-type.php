@@ -43,8 +43,6 @@
         } else {
             do_action('woocommerce_no_products_found');
         }; ?>
-		<div class="col-12 text-white mb-3">
-			<a class="w-100 btn background-marca" href="https://crazyoutlets.cl/shop/">Ver todos los productos</a>
-		</div>
+		
     </div>
 </div>
