@@ -2,7 +2,7 @@
 	<?php include get_template_directory() . '/assets/modulos/modulo-infobox/infobox.css'; ?>
 </style>
 <div id="comercio-infobox" class="container-fluid">
-	<div class="container  bg-white">
+	<div class="container">
 		<div class="row">
 			<?php $active = true;
 			$temp = $wp_query;
