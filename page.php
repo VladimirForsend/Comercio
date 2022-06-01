@@ -14,6 +14,15 @@
 
 get_header();
 ?>
+<?php
+    // TOP PICTURE DEFINITIONS
+    if ( is_shop('english') ) { ?>
+       hola soy el shop
+	<?php }
+    else { ?>
+        hola soy una pagina
+    <?php }
+?>
 
 	<main id="primary" class="site-main">
 
