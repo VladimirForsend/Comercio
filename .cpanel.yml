@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/f0rs3ndadm1n2021/public_html/terra/wp-content/themes/comercio2/
-    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -R comercio2 $DEPLOYPATH
