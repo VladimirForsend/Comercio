@@ -1,0 +1,42 @@
+/*hoja poster*/
+.home #poster .card {
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+.home #poster .card-img-top {
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0px;
+}
+
+.home #poster .card-body p {
+  height: auto;
+}
+
+/*poster pestaña interior*/
+.poster-interior {
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  height: 70vh;
+}
+
+.single-posters header.entry-header {
+  position: relative;
+  height: auto!important;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  display: flex;
+  color: #333;
+  background-position: center center;
+  background-size: 100%;
+  z-index: 0;
+  background-repeat: no-repeat;
+}
+
+/*hoja poster*/

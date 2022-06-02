@@ -1,0 +1,45 @@
+/*carrito y checkout*/
+
+.woocommerce form .form-row {
+    display: block;
+}
+
+#add_payment_method table.cart img,
+.woocommerce-cart table.cart img,
+.woocommerce-checkout table.cart img {
+    width: 100px;
+    box-shadow: none;
+}
+
+.woocommerce .cart-collaterals .cart_totals,
+.woocommerce-page .cart-collaterals .cart_totals {
+    max-width: 100%;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.cart_totals h2 {
+    color: #4A4A4A;
+    font-size: 2rem;
+}
+
+.checkout-button.button.alt.wc-forward {
+    background-color: var(--color-cliente);
+}
+.checkout-button.button.alt.wc-forward:hover {
+	background-color: var(--color-cliente);
+}
+.button:hover {
+    background-color: #88d700;
+    -webkit-transition: box-shadow .1s ease-out;
+    transition: box-shadow .1s ease-out;
+    box-shadow: 0 7px 16px 0 rgba(0, 0, 0, .2), 0 1px 3px 0 rgba(0, 0, 0, .1);
+}
+
+.carro-titan.woocommerce-cart-form {
+    background-color: #fff;
+    padding: 1rem;
+}

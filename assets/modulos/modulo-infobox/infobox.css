@@ -1,0 +1,92 @@
+.infobox-comercio {
+    background-color: #efefef;
+}
+
+.iconos_home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+.contendor-iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+    border-radius: 5px;
+    padding: .5rem;
+    width: 100%;
+    height: 100px;
+    /*cursor: pointer;*/
+    -webkit-box-shadow: 0 0 1px 0px #CCC;
+    box-shadow: 0 0 1px 0px #CCC;
+}
+
+.contendor-iconos:hover {
+    background-color: #e3e3e3;
+    -webkit-box-shadow: 0 0 10px 0px #CCC;
+    box-shadow: 0 0 10px 0px #CCC;
+}
+
+.texto_interior_campos_home {
+    width: 100%;
+    padding-left: 5%;
+}
+
+.icono_campo {
+    font-size: 1.5rem;
+    color: #c6c6c6;
+    background-color: #fff;
+    border-radius: 100px;
+    width: 25%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_campo {
+    font-weight: normal;
+    font-size: 0.9em;
+    letter-spacing: -.03rem;
+}
+
+.texto_campo {
+    font-weight: 300;
+    font-size: 0.9rem;
+    letter-spacing: -.03rem;
+}
+
+#comercio-infobox .infobox-iconos {}
+
+#comercio-infobox .infobox-iconos a {
+    text-decoration: none;
+}
+
+#comercio-infobox .infobox-iconos .infobox-icono {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infobox-box h3 {
+    font-weight: normal;
+    font-size: 0.9em;
+    letter-spacing: -.03rem;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.infobox-box p {
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: -.03rem;
+}

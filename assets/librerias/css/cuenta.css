@@ -1,0 +1,125 @@
+/* clases para la pagina de mi cuenta */
+/* no logeado */
+#ContenidoCuenta #customer_login .col-1, #ContenidoCuenta #customer_login .col-2{
+    padding: 30px;
+    background-color: #f8f8f8;
+    box-shadow: 0 1px 2px 0px #ccc;
+    margin-bottom: 30px;
+}
+#ContenidoCuenta #customer_login form{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+/* logeado */
+#ContenidoCuenta .mensaje-bienvenida{
+    padding: 30px;
+    background-color: #f8f8f8;
+    box-shadow: 0 1px 2px 0px #ccc;
+}
+#ContenidoCuenta .mensaje-bienvenida a{
+    color: rgba(255,0,0,0.5);
+}
+#ContenidoCuenta .woocommerce-MyAccount-navigation ul{
+    margin: 0;
+    padding: 0;
+}
+#ContenidoCuenta .woocommerce-MyAccount-navigation ul li a{
+    display: block;
+    padding: 15px 30px;
+    background: linear-gradient(to left, #f8f8f8 50%, #fdfdfd 50%) right;
+    background-size: 201%;
+    box-shadow: 0 1px 2px 0px #ccc;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+#ContenidoCuenta .woocommerce-MyAccount-navigation ul li a:hover{
+    background-position: left;
+    box-shadow: 0 1px 3px 1px #bbb;
+    padding-left: 40px;
+}
+#ContenidoCuenta .woocommerce-MyAccount-navigation ul .is-active a{
+    background: none;
+    background-color: #fdfdfd;
+    border: 1px solid #ccc;
+    padding-left: 40px;
+}
+#ContenidoCuenta .woocommerce-MyAccount-content{
+    padding: 30px;
+    background-color: #f8f8f8;
+    box-shadow: 0 1px 2px 0px #ccc;
+    min-height: 300px;
+}
+#ContenidoCuenta .woocommerce-MyAccount-content a{
+    color: rgba(0,0,255,0.5);
+}
+#ContenidoCuenta .woocommerce-MyAccount-content .woocommerce-Message, #ContenidoCuenta .woocommerce-MyAccount-content .woocommerce-message{
+    border: none;
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+#ContenidoCuenta .woocommerce-MyAccount-content .woocommerce-Message::before{
+    top: auto;
+}
+#ContenidoCuenta .woocommerce-MyAccount-content .woocommerce-Addresses div{
+    padding: 0;
+}
+#ContenidoCuenta .woocommerce-MyAccount-content .woocommerce-Addresses header{
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+    background-color: inherit;
+}
+#ContenidoCuenta .woocommerce-MyAccount-content .woocommerce-Addresses header h3{
+    display: contents;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+#ContenidoCuenta .woocommerce-MyAccount-content form label{
+    background-color: #fdfdfd;
+    margin-bottom: 0;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+}
+#ContenidoCuenta .woocommerce-MyAccount-content form input{
+    border-radius: 0 0 3px 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#ContenidoCuenta .woocommerce-MyAccount-content form input:focus{
+    border:1px solid #ccc;
+}
+#ContenidoCuenta .woocommerce-MyAccount-content form p{
+    margin-bottom: 15px;
+}
+#ContenidoCuenta .woocommerce-MyAccount-content form span em{
+    display: block;
+    margin-top: 10px;
+}
+/* clases para paginas interiores */
+.page-id-139 #ContenidoPage .panel-grid-cell, .page-id-5005 #ContenidoPage .contenedor-crazy{
+	padding: 25px 30px 10px 30px;
+	background-color: #f8f8f8;
+	box-shadow: 0 1px 2px 0 #ccc;
+	margin-bottom: 20px;
+}
+.page-id-139 #ContenidoPage ul, .page-id-5005 #ContenidoPage ul{
+	margin-left:0;
+	list-style: disc;
+}
+.page-id-139 #ContenidoPage ul li, .page-id-5005 #ContenidoPage ul li{
+	padding: 10px 0;
+}
+#ContenidoPage .linea-decorativa{
+	border-bottom: 2px solid #ccc;
+	padding-bottom: 4px;
+}
+#ContenidoPage .importante{
+	font-weight: bold;
+	text-transform: uppercase;
+}

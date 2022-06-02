@@ -1,0 +1,163 @@
+/*tarjetas productos*/
+
+.theme-comercio.woocommerce ul.products li.product a {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    color: #fff;
+    position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.theme-comercio ul h2 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: #333;
+    text-align: left;
+    width: 100%;
+}
+
+.theme-comercio.woocommerce ul.products li.product .price {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color: #333;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: left;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+
+.theme-comercio .price del {
+    color: #767676;
+    font-size: 1.1rem;
+}
+
+.theme-comercio.woocommerce ul.products li.product .onsale {
+    position: absolute;
+    z-index: 1;
+    background-color: red;
+    font-size: .9rem;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 0px;
+    min-height: 10px;
+    max-height: 20px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 55%;
+    left: 0px;
+    right: unset;
+}
+
+.theme-comercio.woocommerce ul.products li.product .comercio-product-card:hover {
+    -webkit-transition: box-shadow .1s ease-out;
+    transition: box-shadow .1s ease-out;
+    box-shadow: 0 7px 16px 0 rgba(0, 0, 0, .2), 0 1px 3px 0 rgba(0, 0, 0, .1);
+}
+
+.theme-comercio.woocommerce ul.products li.product a img {
+    padding: 15px;
+    width: auto;
+    margin: 0;
+}
+
+.theme-comercio.woocommerce ul.products li.product a.button {
+    padding: 0px;
+    width: 90%;
+    margin: 10px auto 10px auto;
+    background-color: var(--color-disponible);
+    border-radius: 5px;
+    color: #fff;
+    font-size: .8rem;
+}
+
+.theme-comercio .star-rating {
+    display: none !important;
+}
+
+.theme-comercio.woocommerce ul.products li.product a.added_to_cart.wc-forward {
+    display: none !important;
+}
+
+mark,
+ins {
+    background: none;
+    text-decoration: none;
+}
+
+.woocommerce-result-count {
+    display: none;
+}
+
+select.orderby {
+    margin-bottom: 15px;
+}
+
+.theme-comercio ul li a.button.loading::after {
+    content: '';
+    right: 10px;
+}
+
+.theme-comercio ul li a.button.loading::after {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.theme-comercio ul li a.button.loading::after {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: 4px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.added_to_cart.wc-forward {
+    display: none;
+}
+
+.theme-comercio.woocommerce ul.products li.product::after {
+    position: absolute;
+    right: 1rem;
+}
+
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+/*tarjetas productos*/
