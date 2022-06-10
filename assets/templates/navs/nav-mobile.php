@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <!---row-->
         <div class="row">
-            <!---navbrand--><a class="navbar-brand col-12 col-md-2" href="#">
+            <!---navbrand--><div class="navbar-brand col-12 col-md-2">
                 <?php
                 the_custom_logo();
                 if (is_front_page() && is_home()) :
@@ -21,7 +21,7 @@
                     <p class="site-description"><?php echo $fundaciones_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
                                                 ?></p>
                 <?php endif; ?>
-            </a>
+                </div>
             <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
                 <div class="login-mobile"><a href="<?php echo get_home_url(); ?>/my-account"><i class="fas fa-user"></i></a></div>
                 <div class="d-flex justify-content-center align-items-center mini-carrito"></div>
