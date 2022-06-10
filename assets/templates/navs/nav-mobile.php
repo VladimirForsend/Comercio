@@ -2,8 +2,8 @@
     <!---conatiner-->
     <div class="container-fluid">
         <!---row-->
-        <div class="row">
-            <!---navbrand--><div class="navbar-brand col-12 col-md-2">
+        <div class="row w-100">
+            <!---navbrand--><div class="navbar-brand col-3">
                 <?php
                 the_custom_logo();
                 if (is_front_page() && is_home()) :
@@ -22,12 +22,9 @@
                                                 ?></p>
                 <?php endif; ?>
                 </div>
-            <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
-                <div class="login-mobile"><a href="<?php echo get_home_url(); ?>/my-account"><i class="fas fa-user"></i></a></div>
-                <div class="d-flex justify-content-center align-items-center mini-carrito"></div>
-            </div>
+          
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
