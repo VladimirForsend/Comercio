@@ -6,7 +6,7 @@ function color_icono($wp_customize)
 
     //seccion customizer
     $wp_customize->add_section('color_icono', array(
-        'title'      => 'Color íconos',
+        'title'      => 'Color del sitio',
         'priority'   => 30,
     ));
     //seccion customizer
