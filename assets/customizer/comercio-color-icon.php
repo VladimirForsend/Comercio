@@ -38,7 +38,7 @@ function color_icono_titan()
         .color_texto_iconos p {
             color: <?php echo get_theme_mod('color_iconos', '#000000'); ?>;
         }
-        .titulo-carrusel-productos {
+        .titulo-carrusel-productos{
             background-color: <?php echo get_theme_mod('color_iconos', '#000000'); ?>;
         }
     </style>
