@@ -44,6 +44,9 @@ function color_icono_titan()
         .lista-productos a.button{
             background-color: <?php echo get_theme_mod('color_iconos', '#000000'); ?>;
         }
+        .background-marca{
+            background-color: <?php echo get_theme_mod('color_iconos', '#000000'); ?>;
+        }
     </style>
 <?php
 }
