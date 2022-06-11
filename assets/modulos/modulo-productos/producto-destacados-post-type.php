@@ -1,5 +1,5 @@
 <div class="container mt-3 contenedor-productos-home carusel--productos">
-    <h3 class="text-center">Nuestros productos</h3>
+    <h3 class="text-center titulo-carrusel-productos text-center">Nuestros productos</h3>
 
     <!--productos destacados-->
     <ul class="mt-3 mb-5 carusel-productos px-0 lista-productos lista-tipo-2">
