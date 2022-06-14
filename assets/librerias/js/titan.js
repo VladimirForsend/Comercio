@@ -89,7 +89,7 @@ jQuery(function($) {
     var clasesBuscador = $('.aws-container');
     var idBuscador = $('.aws-container');
     $(idBuscador).attr('id', 'buscador-comercio');
-    $(clasesBuscador).addClass('buscador-comercio col-12 col-md-3');
+    $(clasesBuscador).addClass('buscador-comercio col-12 col-md-4');
 
     var tabla_peso = $(".woocommerce-product-attributes-item.woocommerce-product-attributes-item--weight");
     $(tabla_peso).appendTo(".has-subtle-light-gray-background-color.has-background");

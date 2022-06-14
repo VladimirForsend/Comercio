@@ -32,7 +32,7 @@
                     array(
                         'theme_location' => 'menu-superior',
                         'menu_id'        => 'navbar',
-                        'menu_class'     => 'navbar-nav me-auto mb-2 mb-lg-0',
+                        'menu_class'     => 'navbar-nav m-auto nav-menu d-flex justify-content-between w-100 px-3',
                         'container_class' => 'nav col-12 col-md-7',
                     )
                 );
