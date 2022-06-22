@@ -20,11 +20,10 @@
 
 					<div class="tipo--entrega">
 						<div class="primera-parte">
-							<h5 class="">TODOS LOS ENVIOS SON POR PAGAR</h5>
-							<div class="">
-								<i class="fas fa-shipping-fast"></i>
-								<h6 class="">Zona Metropolitana de Santiago y Envío a regiones: </h6>
-								<p class="d-inline">Su pedido se despachara de 3 a 5 días hábiles después de efectuada la compra. Enviaremos a su correo el número de seguimiento dentro de las 24 horas.</p>
+							<h5 class=""><?php echo get_the_title();?></h5>
+							<div class="contenedor-contenido">
+								<?php the_field('iconos_infodelivery');?>
+								<p class="d-inline"><?php echo get_the_excerpt();?></p>
 							</div>
 						</div>
 
