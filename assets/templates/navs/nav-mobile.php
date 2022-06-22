@@ -2,8 +2,8 @@
     <!---conatiner-->
     <div class="container-fluid">
         <!---row-->
-        <div class="row w-100">
-            <!---navbrand--><div class="navbar-brand col-3">
+        <div class="row w-100 mx-auto">
+            <!---navbrand--><div class="navbar-brand col-9">
                 <?php
                 the_custom_logo();
                 if (is_front_page() && is_home()) :
