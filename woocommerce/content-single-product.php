@@ -96,22 +96,24 @@ if (post_password_required()) {
 
                     </ul>
                 <?php }; ?>
-               
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <?php echo do_shortcode('[contact-form-7 id="82" title="formulario cotización productos"]'); ?>
 
+        <?php include get_template_directory() . '/assets/modulos/modulo-infodelivery/loop-infodelivery.php'; ?>
+        <?php do_action('woocommerce_after_single_product'); ?>
+    </div>
 
-                <div class="container">
-                <?php echo do_shortcode('[contact-form-7 id="82" title="formulario cotización productos"]'); ?>
-
-<?php include get_template_directory() . '/assets/modulos/modulo-infodelivery/loop-infodelivery.php';?>
-                    <?php do_action('woocommerce_after_single_product'); ?>
-                </div>
-                <?php
-                /**
-                 * Hook: woocommerce_after_single_product_summary.
-                 *
-                 * @hooked woocommerce_output_product_data_tabs - 10
-                 * @hooked woocommerce_upsell_display - 15
-                 * @hooked woocommerce_output_related_products - 20
-                 */
-                do_action('woocommerce_after_single_product_summary');
-                ?>
+    <?php
+    /**
+     * Hook: woocommerce_after_single_product_summary.
+     *
+     * @hooked woocommerce_output_product_data_tabs - 10
+     * @hooked woocommerce_upsell_display - 15
+     * @hooked woocommerce_output_related_products - 20
+     */
+    do_action('woocommerce_after_single_product_summary');
+    ?>
+</div>
