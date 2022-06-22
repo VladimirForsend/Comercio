@@ -1,7 +1,7 @@
 <style>
 	<?php include get_template_directory() . '/assets/modulos/modulo-infodelivery/infodelivery.css'; ?>
 </style>
-<div id="comercio-infodelivery" class="container-fluid">
+<div id="comercio-infodelivery" class="container-fluid p-0">
 
 		<div class="row">
 			<?php $active = true;
