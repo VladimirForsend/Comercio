@@ -18,7 +18,7 @@
 			$wp_query = new WP_Query($args);
 			if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
-					<div id="infobox-<?php the_ID(); ?>" class="col-6 col-sm-6 col-lg-3 infobox-<?php the_ID(); ?> infobox-iconos">
+					<div id="infobox-<?php the_ID(); ?>" class="col-12 col-sm-12 col-lg-3 infobox-<?php the_ID(); ?> infobox-iconos">
 						<a class="d-inline-block w-100" href="<?php the_permalink(); ?>">
 							<div class="contendor-iconos">
 								<figure class="color_iconos infobox-icono infobox-<?php the_ID(); ?>">
