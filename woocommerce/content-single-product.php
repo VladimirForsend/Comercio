@@ -96,7 +96,7 @@ if (post_password_required()) {
 
                     </ul>
                 <?php }; ?>
-
+ 
                 <div class="container">
  
                 <a class="whatsapp-productos" href="https://wa.me/56961591932?text=Me%20interesa%20Cotizar%20:%20'<?php echo get_the_title();?>'" target="_blank">
