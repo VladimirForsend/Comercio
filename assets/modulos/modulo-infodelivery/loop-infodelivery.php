@@ -2,7 +2,7 @@
 	<?php include get_template_directory() . '/assets/modulos/modulo-infodelivery/infodelivery.css'; ?>
 </style>
 <div id="comercio-infodelivery" class="container-fluid">
-	<div class="container">
+
 		<div class="row">
 			<?php $active = true;
 			$temp = $wp_query;
@@ -36,5 +36,5 @@
 			wp_reset_query();
 			$wp_query = $temp ?>
 		</div>
-	</div>
+
 </div>
