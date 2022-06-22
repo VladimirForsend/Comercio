@@ -1,7 +1,7 @@
 <!--Slider-->
 <script>
-     var linktag = "/assets/modulos/modulo-slider/mstyle.css';?>";
-    $('head').append("<link rel='stylesheet' href='"linktag"'>");
+   
+    $('head').append('<link rel="stylesheet" href="mystyle.css">');
     
 </script>
 
