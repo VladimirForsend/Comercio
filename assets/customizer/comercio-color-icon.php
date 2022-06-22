@@ -46,7 +46,13 @@ function color_icono_titan()
         }
         .background-marca{
             background-color: <?php echo get_theme_mod('color_iconos', '#000000'); ?>;
+            
         }
+        footer.site-footer{
+            background-color: <?php echo get_theme_mod('color_iconos', '#000000'); ?>;
+            border-top: 5px solid <?php echo get_theme_mod('color_iconos', '#000000'); ?>;
+        }
+   
     </style>
 <?php
 }

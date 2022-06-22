@@ -24,14 +24,14 @@
     
     @import url("cuenta.css");
     /* checkout */
-
-	@import url("tablet.css");
+    
+    @import url("tablet.css");
     /* pagina 404 (si, me dió paja cambiarle el nombre :V) */
-
-    html{
+    
+    html {
         scroll-behavior: smooth;
     }
-
+    
     html,
     body,
     div,
@@ -122,9 +122,15 @@
         font-family: Lato, sans-serif;
         -moz-osx-font-smoothing: grayscale;
     }
-    a, a:hover, a:focus, a:visited, a:link{
+    
+    a,
+    a:hover,
+    a:focus,
+    a:visited,
+    a:link {
         color: inherit;
     }
+    
     ol,
     ul {
         list-style: none;
@@ -269,15 +275,19 @@
     .navbar-dark .navbar-nav .nav-link {
         color: #fff !important;
     }
+    
     .navbar-brand {
         height: 80px;
     }
-    .navbar-brand a{
+    
+    .navbar-brand a {
         height: 100%;
     }
+    
     .navbar-brand p {
         display: none;
     }
+    
     .navbar-brand img {
         height: 100%;
         width: auto;
@@ -299,9 +309,8 @@
     footer.site-footer {
         color: #fff;
         font-size: 0.8rem;
-        font-weight: 300;
-        background-color: #090909;
-        border-top: #090909;
+        background-color: #222;
+        margin-top: 3rem;
     }
     
     footer.site-footer .titulos-menus-cat {
@@ -424,14 +433,6 @@
     footer#colophon #menu-rrss .boton-con-icono:hover:before {
         color: #fff;
         opacity: 1;
-    }
-    
-    footer.site-footer {
-        color: #fff;
-        font-size: 0.8rem;
-        background-color: #222;
-        border-top: 5px solid var(--color-cliente);
-        margin-top: 3rem;
     }
     
     #menu-rrss-footer {
@@ -558,13 +559,14 @@
         text-align: center;
         display: flex;
         color: #fff;
-		background-color: white;
+        background-color: white;
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
         z-index: 0;
     }
-    .page header.entry-header h1{
+    
+    .page header.entry-header h1 {
         width: 100%;
         background-color: rgba(0, 0, 0, 0.8);
         text-transform: uppercase;
@@ -586,7 +588,6 @@
     .home .categoria-destacada {
         order: 4;
     }
-    
     /*page*/
     
     .single header {
@@ -938,25 +939,28 @@
     /*categorias home*/
     /*tarjetas productos*/
     
-	.titulo-carrusel-productos{
-		background-color: var(--color-cliente);
-		border-radius: 10px 10px 0 0;
-		margin-bottom: 0;
-		padding: 8px 0;
-		color: white;
-	}
-    .lista-productos{
-		margin: 15px 0 15px 0;
+    .titulo-carrusel-productos {
+        background-color: var(--color-cliente);
+        border-radius: 10px 10px 0 0;
+        margin-bottom: 0;
+        padding: 8px 0;
+        color: white;
+    }
+    
+    .lista-productos {
+        margin: 15px 0 15px 0;
         display: flex;
         width: 100%;
         flex-wrap: wrap;
     }
-	.lista-tipo-2{
-		background-color: #ddd;
-		padding: 20px 0;
-		border-radius: 0 0 10px 10px;
-		margin-top: 0 !important;
-	}
+    
+    .lista-tipo-2 {
+        background-color: #ddd;
+        padding: 20px 0;
+        border-radius: 0 0 10px 10px;
+        margin-top: 0 !important;
+    }
+    
     .comercio-product-card {
         display: flex;
         justify-content: space-between;
@@ -968,6 +972,7 @@
         height: 100%;
         width: 100%;
     }
+    
     .lista-productos li a {
         max-width: 100%;
         display: flex;
@@ -1005,14 +1010,14 @@
         text-align: left;
         width: 100%;
         justify-content: flex-end;
-		margin-bottom: 0;
-		font-weight: bold;
+        margin-bottom: 0;
+        font-weight: bold;
     }
     
     .lista-productos .price del {
         color: #767676;
         font-size: 1.1rem;
-		font-weight: 400;
+        font-weight: 400;
     }
     
     .lista-productos .onsale {
@@ -1021,7 +1026,7 @@
         background-color: red;
         padding: .3rem;
         font-size: .9rem;
-        top:150px;
+        top: 150px;
         left: 0px;
         color: #fff;
         font-weight: 900;
@@ -1036,8 +1041,8 @@
     .lista-productos li a img {
         padding: 15px;
         width: auto;
-		margin-bottom: 0 !important;
-		max-height: 215px;
+        margin-bottom: 0 !important;
+        max-height: 215px;
     }
     
     .lista-productos a.button {
@@ -1098,14 +1103,15 @@
         animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
         border-color: #fff transparent transparent transparent;
     }
-
     /* clases nuevas */
-    .mini-banner{
+    
+    .mini-banner {
         height: 45px;
         width: 100%;
         overflow: hidden;
     }
-    .mini-banner img{
+    
+    .mini-banner img {
         min-width: 100%;
         min-height: 100%;
         height: auto;
@@ -1128,78 +1134,95 @@
     }
     /*tarjetas productos*/
     /* remover tamaños de woocommerce */
-    .remove-col .woocommerce .col-1, .remove-col .woocommerce .col-2{
+    
+    .remove-col .woocommerce .col-1,
+    .remove-col .woocommerce .col-2 {
         float: none;
         width: 100%;
         max-width: unset;
     }
-/* overrides css woocommerce */
-.woocommerce ul.products li.product .price{
-	color: #333;
-	display: flex;
-	margin-bottom: 0;
-	font-size: 1.3rem;
-	font-weight: bold;
-}
-.woocommerce a.button{
-	margin-top: 10px;
-	display: flex;
-}
-.woocommerce a.button:hover{
-	color: white;
-	background-color: var(--color-disponible);
-	box-shadow: 0 7px 16px 0 rgba(0, 0, 0, .2), 0 1px 3px 0 rgba(0, 0, 0, .1);
-}
-.woocommerce ul.products li.product .onsale{
-	position: absolute;
-	z-index: 1;
-	background-color: red;
-	padding: .3rem;
-	font-size: .9rem;
-	top: 150px;
-	left: 0px;
-	color: #fff;
-	font-weight: 900;
-	right: unset;
-	margin: 0;
-	border-radius: unset;
-	line-height: normal;
-	min-height: auto;
-}
-.color-marca{
-	color: var(--color-cliente);
-}
-.background-marca{
-	background-color: var(--color-cliente);
-}
-.test{
-	color: black;
-	font-size: 2rem;
-}
-.nav-shadow{
-	box-shadow: 1px 2px 6px 2px rgba(0,0,0,0.1);
-}
-body.single-product{
-	background-color: white !important;
-}
-.seccion-como{
-	margin-top: 30px;
-}
-.seccion-como figure{
-	display: flex;
-	justify-content: center;
-}
-.seccion-como img{
-	max-height: 240px;
-	width: auto;
-}
-.contenedor-imagen-bg{
-	display:block;
-	overflow:hidden;
-}
-.contenedor-imagen-bg .imagen-bg{
-	transition:0.3s;
-}
-.contenedor-imagen-bg:hover .imagen-bg{
-	transform:scale(110%);
-}
+    /* overrides css woocommerce */
+    
+    .woocommerce ul.products li.product .price {
+        color: #333;
+        display: flex;
+        margin-bottom: 0;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    
+    .woocommerce a.button {
+        margin-top: 10px;
+        display: flex;
+    }
+    
+    .woocommerce a.button:hover {
+        color: white;
+        background-color: var(--color-disponible);
+        box-shadow: 0 7px 16px 0 rgba(0, 0, 0, .2), 0 1px 3px 0 rgba(0, 0, 0, .1);
+    }
+    
+    .woocommerce ul.products li.product .onsale {
+        position: absolute;
+        z-index: 1;
+        background-color: red;
+        padding: .3rem;
+        font-size: .9rem;
+        top: 150px;
+        left: 0px;
+        color: #fff;
+        font-weight: 900;
+        right: unset;
+        margin: 0;
+        border-radius: unset;
+        line-height: normal;
+        min-height: auto;
+    }
+    
+    .color-marca {
+        color: var(--color-cliente);
+    }
+    
+    .background-marca {
+        background-color: var(--color-cliente);
+    }
+    
+    .test {
+        color: black;
+        font-size: 2rem;
+    }
+    
+    .nav-shadow {
+        box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.1);
+    }
+    
+    body.single-product {
+        background-color: white !important;
+    }
+    
+    .seccion-como {
+        margin-top: 30px;
+    }
+    
+    .seccion-como figure {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .seccion-como img {
+        max-height: 240px;
+        width: auto;
+    }
+    
+    .contenedor-imagen-bg {
+        display: block;
+        overflow: hidden;
+    }
+    
+    .contenedor-imagen-bg .imagen-bg {
+        transition: 0.3s;
+    }
+    
+    .contenedor-imagen-bg:hover .imagen-bg {
+        transform: scale(110%);
+    }
