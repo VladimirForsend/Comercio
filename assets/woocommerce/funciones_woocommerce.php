@@ -117,7 +117,7 @@ function get_variation_sku() {
 
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
   
-add_action( 'woocommerce_after_single_product_summary', 'bbloomer_wc_output_long_description', 10 );
+//add_action( 'woocommerce_after_single_product_summary', 'bbloomer_wc_output_long_description', 10 );
   
 function woocommerce_template_product_description()
 {
