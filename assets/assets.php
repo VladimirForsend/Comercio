@@ -205,6 +205,5 @@ include get_template_directory() . '/assets/modulos/modulo-carrusel-logos/core-c
 include get_template_directory() . '/assets/modulos/modulo-infobox/core-infobox.php';
 include get_template_directory() . '/assets/modulos/modulo-infodelivery/core-infodelivery.php';
 //widget wsapp
-include get_template_directory() . '/assets/widgets/widget-whatsapp.php';
-
+include get_template_directory() . '/assets/widgets/widget-whatsapp.php'; 
 
