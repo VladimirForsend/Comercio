@@ -101,14 +101,6 @@ if (post_password_required()) {
  
                 
                 <a id="whatsapp" class="whatsapp-boton--ficha col-12" target="_blank" href="https://api.whatsapp.com/send?phone=56961591932&amp;text=Hola%20necesito%20el%20cotizar%20<?php echo get_the_title();?>"><i class="fab fa-whatsapp" aria-hidden="true"></i>Quiero cotizar <?php echo get_the_title();?></a>
-                <div class="d-none d-sm-flex producto-boton-wsapp"><i class="fab fa-whatsapp pr-2"></i>
-                
-                <div class="texto-wsapp">
-                    <p>CONSULTE AQUÍ</p></div></div>
-                    
-                    <div class="d-flex d-sm-none wsp-mobile"><i class="fab fa-whatsapp"></i>
-                </div>
-            </a>
                     
                     <?php echo do_shortcode('[contact-form-7 id="82" title="formulario cotización productos"]'); ?>
 
