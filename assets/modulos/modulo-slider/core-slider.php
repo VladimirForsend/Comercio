@@ -106,22 +106,6 @@ if( function_exists('acf_add_local_field_group') ):
                 'mime_types' => '',
             ),
             array(
-                'key' => 'field_6047a816a6470',
-                'label' => 'Texto boton slider',
-                'name' => '',
-                'type' => 'tab',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'placement' => 'top',
-                'endpoint' => 0,
-            ),
-            array(
                 'key' => 'field_6047a8e0fa226',
                 'label' => 'Link banner',
                 'name' => '',
