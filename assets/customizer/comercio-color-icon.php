@@ -49,7 +49,7 @@ function color_icono_titan()
             
         }
         footer.site-footer{
-            background-color: <?php echo get_theme_mod('color_iconos', '#000000'); ?>;
+           
             border-top: 5px solid <?php echo get_theme_mod('color_iconos', '#000000'); ?>;
         }
    
