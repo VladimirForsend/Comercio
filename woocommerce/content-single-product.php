@@ -96,12 +96,13 @@ if (post_password_required()) {
 
                     </ul>
                 <?php }; ?>
-                <?php echo do_shortcode('[contact-form-7 id="82" title="formulario cotización productos"]'); ?>
-
-                <?php include get_template_directory() . '/assets/modulos/modulo-infodelivery/loop-infodelivery.php';?>
+               
 
 
                 <div class="container">
+                <?php echo do_shortcode('[contact-form-7 id="82" title="formulario cotización productos"]'); ?>
+
+<?php include get_template_directory() . '/assets/modulos/modulo-infodelivery/loop-infodelivery.php';?>
                     <?php do_action('woocommerce_after_single_product'); ?>
                 </div>
                 <?php
