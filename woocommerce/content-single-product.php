@@ -98,6 +98,9 @@ if (post_password_required()) {
                 <?php }; ?>
 
                 <div class="container">
+
+                <a class="whatsapp" href="https://wa.me/56961591932?text=Me%20interesa%20Cotizar%20:%20'<?php echo get_the_title();?>'" target="_blank"><div class="d-none d-sm-flex boton-wsapp"><i class="fab fa-whatsapp pr-2"></i><div class="texto-wsapp"><p>CONSULTE AQUÍ <span>Whatsapp</span></p></div><div class="foto-wsapp"></div></div><div class="d-flex d-sm-none wsp-mobile"><i class="fab fa-whatsapp"></i></div></a>
+                    
                     <?php echo do_shortcode('[contact-form-7 id="82" title="formulario cotización productos"]'); ?>
 
                     <?php include get_template_directory() . '/assets/modulos/modulo-infodelivery/loop-infodelivery.php'; ?>
