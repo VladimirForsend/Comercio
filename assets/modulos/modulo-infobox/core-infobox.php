@@ -2,7 +2,7 @@
  /*speakers*/
 
 // Register Custom Post Type
-add_action( 'init', 'infobox', 0 );
+add_action( 'init', 'infobox', 0 ); 
 
 function infobox() {
 
