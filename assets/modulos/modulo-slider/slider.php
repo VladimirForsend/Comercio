@@ -1,7 +1,7 @@
 <!--Slider-->
 <script>
    
-    $('head').append('<link rel="stylesheet" href="mystyle.css">');
+    $('head').append('<link rel="stylesheet" href="mstyle.css">');
     
 </script>
 
