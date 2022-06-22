@@ -1,8 +1,11 @@
 <!--Slider-->
-<script>
+    <script>
     jQuery(function($) {
-$('head').append('<link rel="stylesheet" href="../assets/modulos/modulo-slider/mstyle.css">');
+        var modulostyle='<link rel="stylesheet" href="<?php get_template_directory_uri() . '/assets/modulos/modulo-slider/mstyle.css';?>">';
+$('head').append(modulostyle);
     });
+
+    
 </script>
 
 <div id="carouselExampleControls" class="carousel slide col-12" data-ride="carousel" data-interval="5000">
