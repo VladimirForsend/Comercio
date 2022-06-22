@@ -1,9 +1,8 @@
 <!--Slider-->
 <script>
-var linkcomercio = document.createElement('link');
-linkcomercio.src = "<?php include get_template_directory() . '/assets/modulos/modulo-slider/mstyle.css';?>";
-linkcomercio.type = 'text/javalinkcomercio';
-document.getElementsByTagName('head')[0].appendChild(linkcomercio);
+     var linktag = "<?php include get_template_directory() . '/assets/modulos/modulo-slider/mstyle.css';?>";
+    $('head').append("<link rel='stylesheet' href='"linktag"'>");
+    
 </script>
 
 <div id="carouselExampleControls" class="carousel slide col-12" data-ride="carousel" data-interval="5000">
