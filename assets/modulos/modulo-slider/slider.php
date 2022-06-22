@@ -1,9 +1,7 @@
 <!--Slider-->
 <script>
     jQuery(function($) {
-
-
-        $('head').append('<link rel="stylesheet" href="'<?php include get_template_directory() . '/assets/modulos/modulo-slider/mstyle.css';?>'">');
+$('head').append('<link rel="stylesheet" href="<?php include get_template_directory() . '/assets/modulos/modulo-slider/mstyle.css';?>">');
     });
 </script>
 
