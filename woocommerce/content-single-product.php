@@ -97,7 +97,7 @@ if (post_password_required()) {
                     </ul>
                 <?php }; ?>
 
-                include get_template_directory() . '/assets/modulos/modulo-infodelivery/loop-infodelivery.php';?>
+                <?php include get_template_directory() . '/assets/modulos/modulo-infodelivery/loop-infodelivery.php';?>
 
 
                 <div class="container">
