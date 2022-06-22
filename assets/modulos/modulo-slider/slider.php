@@ -1,7 +1,10 @@
 <!--Slider-->
     <script>
     jQuery(function($) {
-        var modulostyle='<link rel="stylesheet" href="<?php get_template_directory_uri() . '/assets/modulos/modulo-slider/mstyle.css';?>">';
+        var urlCSS="<?php get_template_directory_uri() . '/assets/modulos/modulo-slider/mstyle.css';?>";
+        var modulostyle='<link rel="stylesheet" href="'urlCSS'">';
+        
+
 $('head').append(modulostyle);
     });
 
