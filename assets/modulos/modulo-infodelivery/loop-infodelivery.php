@@ -27,14 +27,6 @@
 							</div>
 						</div>
 
-						<div class="segunda-parte">
-							<i class="fas fa-store-alt"></i>
-							<h6 class="">Compra directo en tienda, ¡Visítanos!</h6>
-							<ul class="">
-								<li class="">– San Alfonso 562 Metro Estación central</li>
-								<li class="">– Horario: Lunes a Viernes de 9:30 a 18:00 hrs. Sábado: 10:00 a 14:00 hrs.</li>
-							</ul>
-						</div>
 					</div>
 
 
