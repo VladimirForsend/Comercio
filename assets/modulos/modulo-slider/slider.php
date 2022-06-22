@@ -1,6 +1,6 @@
 <!--Slider-->
 <script>
-     var linktag = "<?php get_template_directory() . '/assets/modulos/modulo-slider/mstyle.css';?>";
+     var linktag = "/assets/modulos/modulo-slider/mstyle.css';?>";
     $('head').append("<link rel='stylesheet' href='"linktag"'>");
     
 </script>
