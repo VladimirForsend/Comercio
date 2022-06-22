@@ -64,20 +64,52 @@ if (post_password_required()) {
                 do_action('woocommerce_single_product_summary');
                 ?>
 
-                
-<?php include get_template_directory() . '/assets/modulos/modulo-infodelivery/loop-infodelivery.php';?>
+
+                <?php
 
 
-<div class="container">
-    <?php do_action('woocommerce_after_single_product'); ?>
-</div>
-<?php
-/**
- * Hook: woocommerce_after_single_product_summary.
- *
- * @hooked woocommerce_output_product_data_tabs - 10
- * @hooked woocommerce_upsell_display - 15
- * @hooked woocommerce_output_related_products - 20
- */
-do_action('woocommerce_after_single_product_summary');
-?>
+                $caracteristica1 = get_field('caracteristicas_destacadas_uno');
+                $caracteristica2 = get_field('caracteristicas_destacadas_dos');
+                $caracteristica3 = get_field('caracteristicas_destacadas_tres');
+                $caracteristica4 = get_field('caracteristicas_destacadas_cuatro');
+                $caracteristica5 = get_field('caracteristicas_destacadas_cinco');
+                if (empty($caracteristica1) && empty($caracteristica2) && empty($caracteristica3) && empty($caracteristica4) && empty($caracteristica5)) {
+                } else {
+                ?>
+
+                    <h6 class="h6 mt-4 pesado"><?php the_field('titulo-caracteristicas-destacadas'); ?></h6>
+                    <ul class="row flex-column caracteristicas-destacadas">
+
+                        <li><?php the_field('caracteristicas_destacadas_uno'); ?></li>
+
+
+                        <li><?php the_field('caracteristicas_destacadas_dos'); ?></li>
+
+
+                        <li><?php the_field('caracteristicas_destacadas_tres'); ?></li>
+
+
+                        <li><?php the_field('caracteristicas_destacadas_cuatro'); ?></li>
+
+
+                        <li><?php the_field('caracteristicas_destacadas_cinco'); ?></li>
+
+                    </ul>
+                <?php }; ?>
+
+                include get_template_directory() . '/assets/modulos/modulo-infodelivery/loop-infodelivery.php';?>
+
+
+                <div class="container">
+                    <?php do_action('woocommerce_after_single_product'); ?>
+                </div>
+                <?php
+                /**
+                 * Hook: woocommerce_after_single_product_summary.
+                 *
+                 * @hooked woocommerce_output_product_data_tabs - 10
+                 * @hooked woocommerce_upsell_display - 15
+                 * @hooked woocommerce_output_related_products - 20
+                 */
+                do_action('woocommerce_after_single_product_summary');
+                ?>
