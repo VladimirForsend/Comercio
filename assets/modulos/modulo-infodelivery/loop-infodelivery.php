@@ -19,38 +19,6 @@
 			if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
 <div class="tipo--entrega">
-
-<?php echo do_shortcode('[contact-form-7 id="82" title="formulario cotización productos"]'); ?>
-
-
-$caracteristica1 = get_field('caracteristicas_destacadas_uno');
-$caracteristica2 = get_field('caracteristicas_destacadas_dos');
-$caracteristica3 = get_field('caracteristicas_destacadas_tres');
-$caracteristica4 = get_field('caracteristicas_destacadas_cuatro');
-$caracteristica5 = get_field('caracteristicas_destacadas_cinco');
-if (empty($caracteristica1) && empty($caracteristica2) && empty($caracteristica3) && empty($caracteristica4) && empty($caracteristica5)) {
-} else {
-?>
-
-	<h6 class="h6 mt-4 pesado"><?php the_field('titulo-caracteristicas-destacadas'); ?></h6>
-	<ul class="row flex-column caracteristicas-destacadas">
-		<?php if (!empty($caracteristica1)) { ?>
-			<li><?php the_field('caracteristicas_destacadas_uno'); ?></li>
-		<?php }; ?>
-		<?php if (!empty($caracteristica2)) { ?>
-			<li><?php the_field('caracteristicas_destacadas_dos'); ?></li>
-		<?php }; ?>
-		<?php if (!empty($caracteristica3)) { ?>
-			<li><?php the_field('caracteristicas_destacadas_tres'); ?></li>
-		<?php }; ?>
-		<?php if (!empty($caracteristica4)) { ?>
-			<li><?php the_field('caracteristicas_destacadas_cuatro'); ?></li>
-		<?php }; ?>
-		<?php if (!empty($caracteristica5)) { ?>
-			<li><?php the_field('caracteristicas_destacadas_cinco'); ?></li>
-		<?php }; ?>
-	</ul>
-<?php }; ?>
 <!-- tipo de entrega nueva -->
 <?php $envio = get_field('envio_a_domicilio');
 $retiro = get_field('retira_tu_compra');
