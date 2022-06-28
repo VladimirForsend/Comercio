@@ -52,7 +52,10 @@ function color_icono_titan()
            
             border-top: 5px solid <?php echo get_theme_mod('color_iconos', '#000000'); ?>;
         }
-   
+        .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current{
+            background-color: <?php echo get_theme_mod('color_iconos', '#000000'); ?>;
+        }
+        
     </style>
 <?php
 }
