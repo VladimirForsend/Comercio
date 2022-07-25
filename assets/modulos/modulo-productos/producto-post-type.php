@@ -28,7 +28,10 @@
 
         ));
         ?>
-        <h3 class="col-12">
+        <h3 class="col-12"><?php
+    global $product;
+?>
+
         <?php echo wc_get_product_tag_list( $product->get_id(), ', ' ); ?>
     </h3>
         <?php
