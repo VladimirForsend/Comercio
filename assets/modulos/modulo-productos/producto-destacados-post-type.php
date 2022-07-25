@@ -13,7 +13,8 @@
             'orderby' => 'date',
             'order' => 'DSC',
             'paged' => $paged,
-            'posts_per_page' => $post_per_page
+            'posts_per_page' => $post_per_page, 
+          
         );
         $wp_query = new WP_Query($args);
 

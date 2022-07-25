@@ -18,6 +18,13 @@
             'page'                 => $paged,
             'paginate'             => true,
             'return'               => 'ids',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'product_cat',
+                    'field'    => 'slug',
+                    'terms'    => 'aminoacidos',
+                ),
+            ),
 
         ));
 
