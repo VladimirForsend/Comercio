@@ -39,7 +39,7 @@
         wc_set_loop_prop('per_page', $products_per_page);
         wc_set_loop_prop('total', $products_ids->total);
         wc_set_loop_prop('total_pages', $products_ids->max_num_pages);
-        
+      
 
         if ($products_ids) {
             do_action('woocommerce_before_shop_loop');
@@ -48,7 +48,7 @@
                 $post_object = get_post($product);
                 setup_postdata($GLOBALS['post'] = &$post_object);
 
-                wc_get_template_part('content', 'product');
+                wc_get_template_part('content', 'product_cat');
             }
             wp_reset_postdata();
             woocommerce_product_loop_end();
