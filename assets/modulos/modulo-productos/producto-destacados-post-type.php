@@ -14,7 +14,13 @@
             'order' => 'DSC',
             'paged' => $paged,
             'posts_per_page' => $post_per_page, 
-          
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'category',
+                    'field'    => 'slug',
+                    'terms'    => 'desarrollo-y-diseno-web',
+                ),
+            ),
         );
         $wp_query = new WP_Query($args);
 
@@ -29,6 +35,11 @@
                                 <?php if (has_post_thumbnail()) : ?>
                                     <?php woocommerce_template_loop_product_thumbnail(); ?>
                                     <h2><?php echo get_the_title(); ?></h2>
+                                    <h2><?php $wp_query->get_queried_object()->term_id;
+                                    echo $term_id;
+                                    
+                                    ;?></h2>
+                                    
                                     <?php
                                     global $woocommerce;
                                     $wp_currency = get_woocommerce_currency_symbol();
