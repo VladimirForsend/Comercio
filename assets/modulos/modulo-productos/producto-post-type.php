@@ -33,6 +33,7 @@
                             if (!empty($terms) && !is_wp_error($terms)) {
                                 foreach ($terms as $term) {
                                     $term_array[] = $term->name;
+                                    echo $term->name;
                                 }
                             }; ?></h3>
         <?php
