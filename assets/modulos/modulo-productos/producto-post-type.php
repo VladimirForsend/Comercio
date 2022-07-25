@@ -28,6 +28,15 @@
 
         )); ?>
         <h3 class="col-12">
+        <?php 
+    foreach( wp_get_post_terms( get_the_id(), 'product_cat' ) as $term ){
+        if( $term ){
+            echo $term->name . '<br>'; // product category name
+            if ($term->description)
+                echo $term->description . '<br>'; // Product category description
+        }
+    }
+?>
 
         </h3>
         <?php
@@ -46,8 +55,6 @@
                 setup_postdata($GLOBALS['post'] = &$post_object);
 
                 wc_get_template_part('content', 'product');
-                $wp_query->get_queried_object()->name;
-                echo $term->name;
             }
             wp_reset_postdata();
             woocommerce_product_loop_end();
