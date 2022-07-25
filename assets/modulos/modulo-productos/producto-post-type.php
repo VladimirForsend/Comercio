@@ -1,14 +1,6 @@
 <div class="container mt-3 contenedor-productos-home">
     <div class="row">
-        <h3 class="col-12">          <?php  $catTerms = get_terms('product_cat', array('hide_empty' => 0, 'orderby' => 'ASC'));
-    foreach($catTerms as $catTerm) : ?>
-    <?php $thumbnail_id = get_woocommerce_term_meta( $catTerm->term_id, 'thumbnail_id', true ); 
-    $image = wp_get_attachment_url( $thumbnail_id );  ?>
-    <a href="<?php echo site_url();?>/product-category/<?php echo $catTerm->slug; ?>">
-<img src="<?php echo $image; ?>"></a>
-         <a href="<?php echo site_url();?>/product-category/<?php echo $catTerm->slug; ?>">  <h2><img src="<?php echo $a['url']; ?>"> 
-           <?php echo $catTerm->name; ?></h2></a>
-    <?php endforeach; ?></h3>
+       
         <?php
 
         if (!function_exists('wc_get_products')) {
@@ -34,8 +26,14 @@
                 ),
             ),
 
-        ));
-
+        ));?>
+         <h3 class="col-12"> <?php $catTerms = get_terms('product_cat', array('hide_empty' => 0, 'orderby' => 'ASC'));
+                            foreach ($catTerms as $catTerm) : ?>
+                <h3><?php echo $catTerm->name; ?></h3>
+                </a>
+            <?php endforeach; ?>
+        </h3>
+<?php
         wc_set_loop_prop('current_page', $paged);
         wc_set_loop_prop('is_paginated', wc_string_to_bool(true));
         wc_set_loop_prop('page_template', get_page_template_slug());
@@ -46,18 +44,18 @@
         if ($products_ids) {
             do_action('woocommerce_before_shop_loop');
             woocommerce_product_loop_start();
-                    foreach ($products_ids->products as $product) {
-                        $post_object = get_post($product);
-                        setup_postdata($GLOBALS['post'] = &$post_object);
+            foreach ($products_ids->products as $product) {
+                $post_object = get_post($product);
+                setup_postdata($GLOBALS['post'] = &$post_object);
 
-                        wc_get_template_part('content', 'product');
-                    }
-                    wp_reset_postdata();
-                    woocommerce_product_loop_end();
+                wc_get_template_part('content', 'product');
+            }
+            wp_reset_postdata();
+            woocommerce_product_loop_end();
             do_action('woocommerce_after_shop_loop');
         } else {
             do_action('woocommerce_no_products_found');
         }; ?>
-		
+
     </div>
 </div>
