@@ -29,7 +29,7 @@
         ));?>
          <h3 class="col-12"> <?php $catTerms = get_terms('product_cat', array('hide_empty' => 0, 'orderby' => 'ASC'));
                             foreach ($catTerms as $catTerm) : ?>
-                <h3><?php echo $catTerm->name; ?></h3>
+                <h3><?php echo $catTerms->name; ?></h3>
                 </a>
             <?php endforeach; ?>
         </h3>
