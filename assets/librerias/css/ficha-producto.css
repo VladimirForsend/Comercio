@@ -333,7 +333,7 @@ textarea:focus {
 .boton-wsapp {
     display: flex;
     height: 50px;
-    width: 250px;
+    width: auto;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -347,16 +347,15 @@ textarea:focus {
     transition: all 1s ease;
     -webkit-box-shadow: 0 0 5px 0 #C2C2C2;
     box-shadow: 0 0 5px 0 #C2C2C2;
+    padding: 1rem;
 }
 
 .boton-wsapp:hover {
     display: flex;
     height: 80px;
-    width: 250px;
+    width: auto;
     position: fixed;
     z-index: 9;
-    bottom: 5%;
-    right: 5%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -366,7 +365,6 @@ textarea:focus {
 }
 
 .foto-wsapp {
-    background-image: url('https://crazyoutlets.cl/wp-content/uploads/2020/09/ejecutiva-co.png');
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: right;
