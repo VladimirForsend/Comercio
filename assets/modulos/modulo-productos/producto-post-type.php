@@ -1,6 +1,17 @@
 <div class="container mt-3 contenedor-productos-home">
     <div class="row">
+    <h3 class="col-12">
+        <?php 
+    foreach( wp_get_post_terms( get_the_id(), 'product_cat' ) as $term ){
+        if( $term ){
+            echo $term->name . '<br>'; // product category name
+            if ($term->description)
+                echo $term->description . '<br>'; // Product category description
+        }
+    }
+?>
 
+        </h3>
         <?php
 
         if (!function_exists('wc_get_products')) {
@@ -27,18 +38,7 @@
             ),
 
         )); ?>
-        <h3 class="col-12">
-        <?php 
-    foreach( wp_get_post_terms( get_the_id(), 'product_cat' ) as $term ){
-        if( $term ){
-            echo $term->name . '<br>'; // product category name
-            if ($term->description)
-                echo $term->description . '<br>'; // Product category description
-        }
-    }
-?>
-
-        </h3>
+       
         <?php
         wc_set_loop_prop('current_page', $paged);
         wc_set_loop_prop('is_paginated', wc_string_to_bool(true));
