@@ -31,7 +31,7 @@
         $wp_query->get_queried_object()->term_id;
 
         ?>
-              <?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>                           	
+                         	
         <?php
         wc_set_loop_prop('current_page', $paged);
         wc_set_loop_prop('is_paginated', wc_string_to_bool(true));
@@ -49,6 +49,7 @@
                 setup_postdata($GLOBALS['post'] = &$post_object);
 
                 wc_get_template_part('content', 'product');
+                echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' );
             }
             wp_reset_postdata();
             woocommerce_product_loop_end();
