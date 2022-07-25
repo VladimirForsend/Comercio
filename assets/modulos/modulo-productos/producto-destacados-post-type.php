@@ -53,9 +53,10 @@
                                         echo $sp_custom_price; ?>
                                     </p>
 
-                                    <a href="<?php the_permalink(); ?>" class="price">Ver detalles</a>
+                                   
                                 <?php endif; ?>
                             <?php endif; ?>
+                            <a class="boton-producto-destacado" href="<?php the_permalink(); ?>" class="price">Ver detalles</a>
                             </div>
                         </a>
                     </div>
