@@ -29,7 +29,7 @@
         )); ?>
         <h3 class="col-12">
   <?php
-$terms = get_the_terms( $post->ID , 'aminoacidos' );
+$terms = get_the_terms( $post->ID , 'product_cat' );
 foreach ( $terms as $term ) {
 echo $term->name;
 }
