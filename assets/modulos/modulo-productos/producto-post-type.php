@@ -28,17 +28,12 @@
 
         )); ?>
         <h3 class="col-12">
-            <?php $catTerms = get_terms(
-                'product_cat',
-                array(
-                    'hide_empty' => 0,
-                    'orderby' => 'ASC'
-                )
-            );
-            foreach ($terms_ids->terms as $term) : ?>
-                <h3><?php echo $term; ?></h3>
-                </a>
-            <?php endforeach; ?>
+  <?php
+$terms = get_the_terms( $post->ID , 'aminoacidos' );
+foreach ( $terms as $term ) {
+echo $term->name;
+}
+?>
         </h3>
         <?php
         wc_set_loop_prop('current_page', $paged);
