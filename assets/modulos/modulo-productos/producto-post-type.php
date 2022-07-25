@@ -12,6 +12,7 @@
         $ordering['orderby']     = stristr($ordering['orderby'], 'price') ? 'meta_value_num' : $ordering['orderby'];
         $products_per_page       = apply_filters('loop_shop_per_page', wc_get_default_products_per_row() * wc_get_default_product_rows_per_page());
         $products_per_page = -1; // -1 shows all posts
+        $pcat_name='aminoacidos';
         $products_ids            = wc_get_products(array(
             'status'               => 'publish',
             'limit'                => $products_per_page,
@@ -22,13 +23,18 @@
                 array(
                     'taxonomy' => 'product_cat',
                     'field'    => 'slug',
-                    'terms'    => 'aminoacidos',
+                    'terms'    => $pcat_name,
                 ),
             ),
 
         ));
         ?>
-        <h3 class="col-12"><?php echo $terms_name ;?></h3>
+        <?php
+  $args = array('number' => '1',);
+  $terms = get_terms($pcat_name, $args );
+    foreach( $terms as $term ){
+    echo '<h3 class="col-12">' . $term->name . '</h3>';
+    } ?>
         <?php
         wc_set_loop_prop('current_page', $paged);
         wc_set_loop_prop('is_paginated', wc_string_to_bool(true));
