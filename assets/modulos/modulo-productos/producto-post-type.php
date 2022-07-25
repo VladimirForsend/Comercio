@@ -32,8 +32,11 @@
         $wp_query->get_queried_object()->term_id;
 
         ?>
-            <?php global $product;
+           <?php 
+    $product_cat_name = get_term_by( 'slug', 'slugname', 'product_cat' );
+    echo $product_cat_name->name;
 ?>
+
             	
         <?php
         wc_set_loop_prop('current_page', $paged);
