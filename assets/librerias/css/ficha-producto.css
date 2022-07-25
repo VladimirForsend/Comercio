@@ -535,7 +535,9 @@ body.single-product strong {
     border-radius: 5px;
     color: #fff;
     padding-right: 15px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 #whatsapp.whatsapp-boton--ficha i {
