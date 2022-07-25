@@ -25,7 +25,7 @@ $title = apply_filters( 'widget_title', $instance['title'] );
 // before and after widget arguments are defined by themes
 echo $args['before_widget'];
 if ( ! empty( $title ) )
-echo '<a class="whatsapp" href="https://wa.me/' . $title . '?text=Me%20interesa%20Cotizar%20:%20' . $blog_title = get_bloginfo() . ' " target="_blank"><div class="d-none d-sm-flex boton-wsapp"><i class="fab fa-whatsapp pr-2"></i><div class="texto-wsapp"><p>CONSULTE AQUÍ <span>Whatsapp</span></p></div><div class="foto-wsapp"></div></div><div class="d-flex d-sm-none wsp-mobile"><i class="fab fa-whatsapp"></i></div></a>';
+echo '<a class="whatsapp" href="https://wa.me/' . $title . '?text=Me%20interesa%20Cotizar%20:%20' . $blog_title = get_bloginfo() . ' " target="_blank"><div class="d-none d-sm-flex boton-wsapp"><i class="fab fa-whatsapp pr-2"></i><div class="texto-wsapp"><p>CONSULTE AQUÍ <span>Whatsapp</span></p></div></div><div class="d-flex d-sm-none wsp-mobile"><i class="fab fa-whatsapp"></i></div></a>';
   
 // This is where you run the code and display the output
 echo __( '', 'comercio_custom_widget_domain' );
