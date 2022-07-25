@@ -28,12 +28,7 @@
 
         )); ?>
         <h3 class="col-12">
-  <?php
-$wp_query->get_queried_object()->name;
-foreach ( $terms as $term ) {
-echo $term->name;
-}
-?>
+
         </h3>
         <?php
         wc_set_loop_prop('current_page', $paged);
@@ -52,6 +47,12 @@ echo $term->name;
 
                 wc_get_template_part('content', 'product');
             }
+           
+            $wp_query->get_queried_object()->name;
+            foreach ( $terms as $term ) {
+            echo $term->name;
+            }
+           
             wp_reset_postdata();
             woocommerce_product_loop_end();
             do_action('woocommerce_after_shop_loop');
