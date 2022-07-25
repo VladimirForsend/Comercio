@@ -579,7 +579,6 @@
     
     .page header.entry-header h1 {
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
         text-transform: uppercase;
         font-weight: bold;
     }
