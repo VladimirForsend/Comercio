@@ -502,7 +502,7 @@
         padding-left: 0;
         font-size: 0.875rem;
         font-weight: 400;
-        line-height: 40px;
+        line-height: 0px;
     }
     
     .textwidget {
