@@ -28,7 +28,7 @@
 
         ));
         ?>
-        <h3 class="col-12"><?php echo $terms ;?></h3>
+        <h3 class="col-12"><?php echo $terms_name ;?></h3>
         <?php
         wc_set_loop_prop('current_page', $paged);
         wc_set_loop_prop('is_paginated', wc_string_to_bool(true));
