@@ -1,6 +1,6 @@
 <div class="container mt-3 contenedor-productos-home">
     <div class="row">
-        <h3 class="col-12">Productos destacados</h3>
+
         <?php
 
         if (!function_exists('wc_get_products')) {
@@ -27,7 +27,15 @@
             ),
 
         ));
-
+        ?>
+        <h3 class="col-12"><?php $terms = get_terms('product_tag');
+                            $term_array = array();
+                            if (!empty($terms) && !is_wp_error($terms)) {
+                                foreach ($terms as $term) {
+                                    $term_array[] = $term->name;
+                                }
+                            }; ?></h3>
+        <?php
         wc_set_loop_prop('current_page', $paged);
         wc_set_loop_prop('is_paginated', wc_string_to_bool(true));
         wc_set_loop_prop('page_template', get_page_template_slug());
@@ -38,18 +46,18 @@
         if ($products_ids) {
             do_action('woocommerce_before_shop_loop');
             woocommerce_product_loop_start();
-                    foreach ($products_ids->products as $product) {
-                        $post_object = get_post($product);
-                        setup_postdata($GLOBALS['post'] = &$post_object);
+            foreach ($products_ids->products as $product) {
+                $post_object = get_post($product);
+                setup_postdata($GLOBALS['post'] = &$post_object);
 
-                        wc_get_template_part('content', 'product');
-                    }
-                    wp_reset_postdata();
-                    woocommerce_product_loop_end();
+                wc_get_template_part('content', 'product');
+            }
+            wp_reset_postdata();
+            woocommerce_product_loop_end();
             do_action('woocommerce_after_shop_loop');
         } else {
             do_action('woocommerce_no_products_found');
         }; ?>
-		
+
     </div>
 </div>
