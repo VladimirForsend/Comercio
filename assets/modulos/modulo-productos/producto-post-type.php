@@ -29,9 +29,11 @@
         )); ?>
         <h3 class="col-12">
   <?php
-$cate = get_queried_object();
-$cateID = $cate->term_id;
-echo $cateID;
+ $wp_query->get_queried_object()->term_id; 
+$terms = get_the_terms( $post->ID , 'aminoacidos' );
+foreach ( $terms as $term ) {
+echo $term->name;
+}
 ?>
         </h3>
         <?php
