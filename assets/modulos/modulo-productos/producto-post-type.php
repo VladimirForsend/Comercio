@@ -29,7 +29,7 @@
         )); ?>
         <h3 class="col-12">
   <?php
- $wp_query->get_queried_object()->term_id; 
+$wp_query->get_queried_object()->name;
 foreach ( $terms as $term ) {
 echo $term->name;
 }
