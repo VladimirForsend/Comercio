@@ -28,11 +28,32 @@
 
         ));
         ?>
-        <h3 class="col-12"><?php
-    global $product;
-?>
+        <h3 class="col-12">
+        <?php 
+        $output = array();
 
-        <?php echo wc_get_product_tag_list( $product->get_id(), ', ' ); ?>
+        // get an array of the WP_Term objects for a defined product ID
+        $terms = wp_get_post_terms( get_the_id(), 'product_tag' );
+        
+        // Loop through each product tag for the current product
+        if( count($terms) > 0 ){
+            foreach($terms as $term){
+                $term_id = $term->term_id; // Product tag Id
+                $term_name = $term->name; // Product tag Name
+                $term_slug = $term->slug; // Product tag slug
+                $term_link = get_term_link( $term, 'product_tag' ); // Product tag link
+        
+                // Set the product tag names in an array
+                $output[] = '<a href="'.$term_link.'">'.$term_name.'</a>';
+            }
+            // Set the array in a coma separated string of product tags for example
+            $output = implode( ', ', $output );
+        
+            // Display the coma separated string of the product tags
+            echo $output;
+        }
+        
+        ?>
     </h3>
         <?php
         wc_set_loop_prop('current_page', $paged);
