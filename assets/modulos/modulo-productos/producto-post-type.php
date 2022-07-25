@@ -28,11 +28,14 @@
 
         ));
         ?>
-        <h3 class="col-12">
-        <?php 
-       echo '<a href="'.$term_link.'">'.$term_name.'</a>';
-        ?>
-    </h3>
+        <h3 class="col-12"><?php $terms = get_terms('product_cat');
+                            $term_array = array();
+                            if (!empty($terms) && !is_wp_error($terms)) {
+                                foreach ($terms as $term) {
+                                    $term_array[] = $term->name;
+                                    echo $$term_name;
+                                }
+                            }; ?></h3>
         <?php
         wc_set_loop_prop('current_page', $paged);
         wc_set_loop_prop('is_paginated', wc_string_to_bool(true));
@@ -40,13 +43,7 @@
         wc_set_loop_prop('per_page', $products_per_page);
         wc_set_loop_prop('total', $products_ids->total);
         wc_set_loop_prop('total_pages', $products_ids->max_num_pages);
-        ?>
-        <h3 class="col-12">
-        <?php 
-       echo '<a href="'.$term_link.'">'.$term_name.'</a>';
-        ?>
-    </h3>
-        <?php
+
         if ($products_ids) {
             do_action('woocommerce_before_shop_loop');
             woocommerce_product_loop_start();
