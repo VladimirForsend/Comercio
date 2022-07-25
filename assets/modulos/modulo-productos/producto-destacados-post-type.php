@@ -56,8 +56,10 @@
                                    
                                 <?php endif; ?>
                             <?php endif; ?>
-                            <a class="boton-producto-destacado" href="<?php the_permalink(); ?>" class="price">Ver detalles</a>
-                            </div>
+                            <div class="lista-productos">
+                            <a class="button" href="<?php the_permalink(); ?>" class="price">Ver detalles</a>
+                            </div>    
+                        </div>
                         </a>
                     </div>
                 </li>
