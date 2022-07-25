@@ -50,7 +50,7 @@
             $output = implode( ', ', $output );
         
             // Display the coma separated string of the product tags
-            echo $output;
+            echo '<a href="'.$term_link.'">'.$term_name.'</a>';
         }
         
         ?>
