@@ -22,7 +22,7 @@ function color_icono($wp_customize)
         'settings'   => 'color_iconos',
     )));
 }
-
+ 
 add_action('wp_head', 'color_icono_titan');
 function color_icono_titan()
 {
