@@ -22,7 +22,7 @@
                 <li class="slidel">
                     <div class="comercio-product-card col-12">
                         <a href="<?php echo get_permalink($loop->post->ID) ?>">
-                            <div class="tarjeta-producto-superior w-100">
+                            <div class="tarjeta-producto-superior text-center w-100">
                            
                                 <?php if (has_post_thumbnail()) : ?>
                                     <?php woocommerce_template_loop_product_thumbnail(); ?>
@@ -37,7 +37,7 @@
                             </div>
 
                             
-                            <div class="tarjeta-producto-inferior w-100">
+                            <div class="tarjeta-producto-inferior text-center w-100">
                                 <?php if ($wp_custom_sale) : ?>
                                     <p class="price">
                                         <del>
