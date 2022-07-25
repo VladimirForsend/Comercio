@@ -28,7 +28,7 @@
 
         ));
         ?>
-        <h3 class="col-12"><?php $terms = get_terms('product_tag');
+        <h3 class="col-12"><?php $terms = get_terms('product_cat');
                             $term_array = array();
                             if (!empty($terms) && !is_wp_error($terms)) {
                                 foreach ($terms as $term) {
