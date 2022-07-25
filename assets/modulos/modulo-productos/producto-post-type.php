@@ -29,14 +29,7 @@
 
         ));
         ?>
-        <?php
-                                    global $woocommerce;
-                                    $wp_currency = get_woocommerce_currency_symbol();
-                                    $sp_custom_price = get_post_meta(get_the_ID(), '_regular_price', true);
-                                    $wp_custom_sale = get_post_meta(get_the_ID(), '_sale_price', true);
-                                    echo get_terms($pcat_name);
-                                    ?>
-                                    	
+                                         	
 <p><?php single_term_title( 'Currently browsing' ); ?>.</p>
         <?php
         wc_set_loop_prop('current_page', $paged);
