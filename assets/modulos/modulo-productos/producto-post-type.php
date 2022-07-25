@@ -46,6 +46,7 @@
                 setup_postdata($GLOBALS['post'] = &$post_object);
 
                 wc_get_template_part('content', 'product');
+                $wp_query->get_queried_object()->name;
                 echo $term->name;
             }
             wp_reset_postdata();
