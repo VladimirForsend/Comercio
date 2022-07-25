@@ -30,29 +30,7 @@
         ?>
         <h3 class="col-12">
         <?php 
-        $output = array();
-
-        // get an array of the WP_Term objects for a defined product ID
-        $terms = wp_get_post_terms( get_the_id(), 'product_cat' );
-        
-        // Loop through each product tag for the current product
-        if( count($terms) > 0 ){
-            foreach($terms as $term){
-                $term_id = $term->term_id; // Product tag Id
-                $term_name = $term->name; // Product tag Name
-                $term_slug = $term->slug; // Product tag slug
-                $term_link = get_term_link( $term, 'product_cat' ); // Product tag link
-        
-                // Set the product tag names in an array
-                $output[] = '<a href="'.$term_link.'">'.$term_name.'</a>';
-            }
-            // Set the array in a coma separated string of product tags for example
-            $output = implode( ', ', $output );
-        
-            // Display the coma separated string of the product tags
-            echo '<a href="'.$term_link.'">'.$term_name.'</a>';
-        }
-        
+       echo '<a href="'.$term_link.'">'.$term_name.'</a>';
         ?>
     </h3>
         <?php
@@ -62,7 +40,13 @@
         wc_set_loop_prop('per_page', $products_per_page);
         wc_set_loop_prop('total', $products_ids->total);
         wc_set_loop_prop('total_pages', $products_ids->max_num_pages);
-
+        ?>
+        <h3 class="col-12">
+        <?php 
+       echo '<a href="'.$term_link.'">'.$term_name.'</a>';
+        ?>
+    </h3>
+        <?php
         if ($products_ids) {
             do_action('woocommerce_before_shop_loop');
             woocommerce_product_loop_start();
