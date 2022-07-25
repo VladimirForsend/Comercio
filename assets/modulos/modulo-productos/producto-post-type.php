@@ -28,14 +28,13 @@
 
         ));
         ?>
-        <h3 class="col-12"><?php $terms = get_terms('product_cat');
-                            $term_array = array();
-                            if (!empty($terms) && !is_wp_error($terms)) {
-                                foreach ($terms as $term) {
-                                    $term_array[] = $term->name;
-                                    echo $term->$term_name;
-                                }
-                            }; ?></h3>
+        <h3 class="col-12"><?php global $post;
+$terms = get_the_terms( $post->ID, 'product_cat' );
+foreach ($terms as $term) {
+    $product_cat_id = $term->term_id;
+    break;
+    echo $term_id;
+}?></h3>
         <?php
         wc_set_loop_prop('current_page', $paged);
         wc_set_loop_prop('is_paginated', wc_string_to_bool(true));
