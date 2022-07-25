@@ -49,7 +49,7 @@
                 setup_postdata($GLOBALS['post'] = &$post_object);
 
                 wc_get_template_part('content', 'product');
-                echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' );
+               wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' );
             }
             wp_reset_postdata();
             woocommerce_product_loop_end();
