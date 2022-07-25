@@ -48,7 +48,7 @@
                 $post_object = get_post($product);
                 setup_postdata($GLOBALS['post'] = &$post_object);
 
-              
+                wc_get_template_part('content', 'product', 'product_cat');
             }
             wp_reset_postdata();
             woocommerce_product_loop_end();
