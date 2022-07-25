@@ -35,8 +35,8 @@
                     'orderby' => 'ASC'
                 )
             );
-            foreach ($terms_ids->terms as $term_name) : ?>
-                <h3><?php echo $term_name; ?></h3>
+            foreach ($terms_ids->terms as $term) : ?>
+                <h3><?php echo $term; ?></h3>
                 </a>
             <?php endforeach; ?>
         </h3>
