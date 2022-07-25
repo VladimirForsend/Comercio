@@ -34,15 +34,7 @@
         ?>
             <?php global $product;
 ?>
-<div class="product_meta">
-
-	<?php   if (!function_exists('wc_get_products')) {
-            return;
-        } $wp_query->get_queried_object()->term_id;
-        echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' );
-
-?>
-</div>               	
+            	
         <?php
         wc_set_loop_prop('current_page', $paged);
         wc_set_loop_prop('is_paginated', wc_string_to_bool(true));
