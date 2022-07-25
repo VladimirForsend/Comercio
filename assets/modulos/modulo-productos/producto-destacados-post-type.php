@@ -52,6 +52,8 @@
                                         <?php echo $wp_currency;
                                         echo $sp_custom_price; ?>
                                     </p>
+
+                                    <a href="<?php the_permalink(); ?>" class="price">Ver detalles</a>
                                 <?php endif; ?>
                             <?php endif; ?>
                             </div>

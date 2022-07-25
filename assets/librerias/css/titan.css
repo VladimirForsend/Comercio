@@ -1235,10 +1235,3 @@
     .contenedor-imagen-bg:hover .imagen-bg {
         transform: scale(110%);
     }
-    
-    .tarjeta-producto-superior.text-center.w-100 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
