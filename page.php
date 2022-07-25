@@ -12,17 +12,11 @@
  * @package comercio2
  */
 
-get_header();
-?>
-<?php
-    // TOP PICTURE DEFINITIONS
-	if ( is_page('productos') ) { ?>
-       hola soy el shop
-	<?php }
-    else { ?>
-        hola soy una pagina
-    <?php }
-?>
+if (is_front_page()) :
+    get_header('front');
+else :
+    get_header();
+endif; ?>
 
 	<main id="primary" class="site-main">
 
