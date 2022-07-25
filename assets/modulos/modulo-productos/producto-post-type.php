@@ -30,7 +30,7 @@
         ));
         ?>
                                          	
-<p><?php single_term_title( 'Currently browsing' ); ?>.</p>
+<p><?php single_term_title( $pcat_name ); ?>.</p>
         <?php
         wc_set_loop_prop('current_page', $paged);
         wc_set_loop_prop('is_paginated', wc_string_to_bool(true));
