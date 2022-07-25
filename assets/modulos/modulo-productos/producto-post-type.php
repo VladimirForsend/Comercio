@@ -1,6 +1,6 @@
 <div class="container mt-3 contenedor-productos-home">
     <div class="row">
-       
+
         <?php
 
         if (!function_exists('wc_get_products')) {
@@ -26,14 +26,21 @@
                 ),
             ),
 
-        ));?>
-         <h3 class="col-12"> <?php $catTerms = get_terms('product_cat', array('hide_empty' => 0, 'orderby' => 'ASC'));
-                            foreach ($catTerms as $catTerm) : ?>
-                <h3><?php echo $catTerms->name; ?></h3>
+        )); ?>
+        <h3 class="col-12">
+            <?php $catTerms = get_terms(
+                'product_cat',
+                array(
+                    'hide_empty' => 0,
+                    'orderby' => 'ASC'
+                )
+            );
+            foreach ($terms_ids->terms as $term_name) : ?>
+                <h3><?php echo $term_name; ?></h3>
                 </a>
             <?php endforeach; ?>
         </h3>
-<?php
+        <?php
         wc_set_loop_prop('current_page', $paged);
         wc_set_loop_prop('is_paginated', wc_string_to_bool(true));
         wc_set_loop_prop('page_template', get_page_template_slug());
