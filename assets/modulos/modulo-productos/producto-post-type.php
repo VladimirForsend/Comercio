@@ -28,6 +28,8 @@
             ),
 
         ));
+        $wp_query->get_queried_object()->term_id;
+
         ?>
                                          	
         <?php
