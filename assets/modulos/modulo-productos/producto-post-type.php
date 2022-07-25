@@ -28,13 +28,13 @@
             ),
 
         ));
-        ?>
-        <?php
-  $args = array('number' => '1',);
-  $terms = get_terms($pcat_name, $args );
-    foreach( $terms as $term ){
-    echo '<h3 class="col-12">' . $term->name . '</h3>';
-    } ?>
+    
+                                    global $woocommerce;
+                                    $wp_currency = get_woocommerce_currency_symbol();
+                                    $sp_custom_price = get_post_meta(get_the_ID(), '_regular_price', true);
+                                    $wp_custom_sale = get_post_meta(get_the_ID(), '_sale_price', true);
+                                    echo get_terms($pcat_name);
+                                    ?>
         <?php
         wc_set_loop_prop('current_page', $paged);
         wc_set_loop_prop('is_paginated', wc_string_to_bool(true));
