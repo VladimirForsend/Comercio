@@ -26,8 +26,8 @@
                            
                                 <?php if (has_post_thumbnail()) : ?>
                                     <?php woocommerce_template_loop_product_thumbnail(); ?>
-                                    <h2><?php echo get_the_title(); ?></h2>
-                            <p><?php echo get_the_excerpt(); ?></p>
+                                    <h2 class="text-center w-100"><?php echo get_the_title(); ?></h2>
+                            <p  class="text-center w-100"><?php echo get_the_excerpt(); ?></p>
                                     <?php
                                     global $woocommerce;
                                     $wp_currency = get_woocommerce_currency_symbol();
