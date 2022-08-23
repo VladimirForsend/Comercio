@@ -6,7 +6,7 @@
 .carousel {
     position: relative;
     padding: 0px;
-    height: 400px;
+    height: 28rem;
 }
 
 .carousel-item.active,
@@ -26,7 +26,7 @@
 }
 
 .carousel-inner {
-    height: 400px;
+    height: 30rem;
 }
 
 .carousel-caption {
